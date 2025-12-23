@@ -12,6 +12,7 @@ import { OrderItemsModule } from './modules/order-items/order-items.module';
 import { OrderCouponModule } from './modules/order-coupon/order-coupon.module';
 import { ProductModule } from './modules/product/product.module';
 import { CouponModule } from './modules/coupon/coupon.module';
+import { ChatbotModule } from './modules/chatbot/chatbot.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { CouponModule } from './modules/coupon/coupon.module';
     OrderCouponModule,
     ProductModule,
     CouponModule,
+    ChatbotModule,
   ],
   controllers: [AppController],
   providers: [AppService],

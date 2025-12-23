@@ -1,4 +1,11 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import {
+  Controller,
+  Delete,
+  Get,
+  Param,
+  ParseIntPipe,
+  Query,
+} from '@nestjs/common';
 import { ProductService } from './product.service';
 
 @Controller('products')
@@ -10,5 +17,10 @@ export class ProductController {
     return this.productService.getBestSellingProducts({
       duration: query.duration || 30,
     });
+  }
+
+  @Delete(':id')
+  async deleteProduct(@Param('id', ParseIntPipe) id: number) {
+    return this.productService.deleteProduct(id);
   }
 }

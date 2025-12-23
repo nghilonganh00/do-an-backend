@@ -6,12 +6,14 @@ import { PaymentService } from '../payment/payment.service';
 import { ShipmentService } from '../shipment/shipment.service';
 import { OrderItemsService } from '../order-items/order-items.service';
 import { OrderCouponService } from '../order-coupon/order-coupon.service';
+import { GhnService } from '../ghn/ghn.service';
 
 @Injectable()
 export class OrderService {
   constructor(
     private readonly supabaseService: SupabaseService,
     private readonly momoService: MomoService,
+    private readonly ghnService: GhnService,
     private readonly paymentService: PaymentService,
     private readonly shipmentService: ShipmentService,
     private readonly orderItemService: OrderItemsService,
@@ -52,23 +54,50 @@ export class OrderService {
   }
 
   async createOrder(createOrder: CreateOrderDto) {
-    const { totalAmount = 0, discount = 0, items, couponId } = createOrder;
+    const {
+      total = 0,
+      discount = 0,
+      items,
+      couponId,
+      address,
+      country,
+      email,
+      phone,
+      provinceId,
+      districtId,
+      wardCode,
+      name,
+    } = createOrder;
 
-    const shipment = await this.shipmentService.createShipment({
-      fullName: 'Nguyen Van A',
-      address:
-        '123 Nguyen Van Linh, Ward 10, District 3, Ho Chi Minh City, Vietnam',
-      email: 'Bt8Qz@example.com',
-      phone: '0123456789',
-      ward: 'Ward 10',
-      district: 'District 3',
-      province: 'Ho Chi Minh City',
-      country: 'Vietnam',
+    const { data: shipment, error: shipmentError } =
+      await this.supabaseService.client
+        .from('shipments')
+        .insert({
+          fullName: name,
+          address,
+          country,
+          email,
+          phone,
+          provinceId,
+          districtId,
+          wardCode,
+        })
+        .select('*')
+        .single();
+
+    const ghnResponse = await this.ghnService.createOrder({
+      items,
+      address,
+      phone,
+      provinceId,
+      districtId,
+      wardCode,
+      name,
     });
 
-    const momoResponse = await this.momoService.createPayment(
-      totalAmount.toString(),
-    );
+    const momoResponse = await this.momoService.createPayment(total.toString());
+
+    if (shipmentError) throw new Error(shipmentError.message);
 
     const payment: any = await this.paymentService.createPayment({
       amount: 10000,
@@ -84,7 +113,7 @@ export class OrderService {
           userId: 2,
           paymentId: payment.id,
           shipmentId: shipment.id,
-          totalAmount,
+          totalAmount: total,
           discount,
         },
       ])
@@ -96,6 +125,7 @@ export class OrderService {
     this.orderCouponService.createOrderCoupon({
       orderId: order.id,
       couponId: couponId,
+      discountAmount: discount,
     });
 
     Promise.all(

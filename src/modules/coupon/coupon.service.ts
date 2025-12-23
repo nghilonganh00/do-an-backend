@@ -7,6 +7,22 @@ export class CouponService {
 
   async getAllCoupons(query: any) {}
 
+  async getCouponById(id: number) {
+    const { data: coupon, error } = await this.supabaseService.client
+      .from('coupons')
+      .select('*')
+      .eq('id', id)
+      .single();
+
+    if (error) throw new Error(error.message);
+
+    return {
+      statusCode: 200,
+      message: 'Get coupon successfully',
+      data: coupon,
+    };
+  }
+
   async createCoupon(createCoupon: any) {
     const { data: newCoupon, error } = await this.supabaseService.client
       .from('coupons')

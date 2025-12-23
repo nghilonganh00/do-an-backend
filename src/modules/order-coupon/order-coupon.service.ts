@@ -8,15 +8,18 @@ export class OrderCouponService {
   async createOrderCoupon({
     orderId,
     couponId,
+    discountAmount,
   }: {
     orderId: number;
     couponId: number;
+    discountAmount: number;
   }) {
     const { data, error } = await this.supabaseService.client
       .from('orderCoupons')
       .insert({
         orderId: orderId,
         couponId: couponId,
+        discountAmount,
       })
       .select()
       .single();

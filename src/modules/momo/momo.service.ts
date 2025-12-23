@@ -13,8 +13,7 @@ export class MomoService {
   private readonly partnerCode = 'MOMO';
   private readonly partnerName = 'Test';
   private readonly storeId = 'MomoTestStore';
-  private readonly redirectUrl =
-    'https://webhook.site/b3088a6a-2d17-4f8d-a383-71389a6c600b';
+  private readonly redirectUrl ='http://localhost:3000/dashboard';
   private readonly ipnUrl = 'http://localhost:8000/api/momo/ipn';
   private readonly requestType = 'payWithMethod';
   private readonly lang = 'vi';

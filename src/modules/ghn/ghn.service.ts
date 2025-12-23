@@ -124,20 +124,64 @@ export class GhnService {
 
   // 3. Tạo đơn hàng (Create Order)
   async createOrder(orderData: any) {
+    const { items, address, phone, provinceId, districtId, wardCode, name } =
+      orderData;
     try {
-      // Cấu trúc payload cần tuân thủ tài liệu GHN
       const payload = {
-        payment_type_id: 2, // 1: Người bán trả, 2: Người mua trả
+        payment_type_id: 2,
         required_note: 'CHOXEMHANGKHONGTHU',
         service_type_id: 2,
-        ...orderData,
-        // orderData cần có: to_name, to_phone, to_address, to_ward_code, to_district_id, weight, items[]
+        from_name: 'Ecommerce',
+        from_phone: '0389257541',
+        from_address: 'HCM',
+        from_ward_name: 'Phường 14',
+        from_district_name: 'Quận 10',
+        from_province_name: 'HCM',
+        return_phone: '0332190444',
+        return_address: '39 NTT',
+        return_district_id: null,
+        return_ward_code: '',
+        client_order_code: '',
+        to_name: name,
+        to_phone: phone,
+        to_address: address,
+        to_ward_code: String(wardCode),
+        to_district_id: Number(districtId),
+        cod_amount: 0,
+        content: 'Theo New York Times',
+        weight: 200,
+        length: 1,
+        width: 19,
+        height: 10,
+        pick_station_id: 1444,
+        deliver_station_id: null,
+        insurance_value: 5000000,
+        service_id: 0,
+        coupon: null,
+        pick_shift: [2],
+        items: items.map((item) => ({
+          name: item?.name || 'iPhone 17 256GB',
+          code: String(item.productVariantId) || '13',
+          quantity: item.quantity,
+          price: 10000,
+          length: 12,
+          width: 12,
+          height: 12,
+          weight: 1200,
+          category: {
+            level1: 'Điện thoại',
+          },
+        })),
       };
 
       const response = await lastValueFrom(
-        this.httpService.post(`${this.apiUrl}/shipping-order/create`, payload, {
-          headers: this.getHeaders(),
-        }),
+        this.httpService.post(
+          `${this.apiUrl}/v2/shipping-order/create`,
+          payload,
+          {
+            headers: this.getHeaders(),
+          },
+        ),
       );
       return response.data;
     } catch (error) {
