@@ -3,7 +3,6 @@ import { CreateOrderDto } from './dtos/create-order.dto';
 import { MomoService } from '../momo/momo.service';
 import { SupabaseService } from '../supabase/supabase.service';
 import { PaymentService } from '../payment/payment.service';
-import { ShipmentService } from '../shipment/shipment.service';
 import { OrderItemsService } from '../order-items/order-items.service';
 import { OrderCouponService } from '../order-coupon/order-coupon.service';
 import { GhnService } from '../ghn/ghn.service';
@@ -15,7 +14,6 @@ export class OrderService {
     private readonly momoService: MomoService,
     private readonly ghnService: GhnService,
     private readonly paymentService: PaymentService,
-    private readonly shipmentService: ShipmentService,
     private readonly orderItemService: OrderItemsService,
     private readonly orderCouponService: OrderCouponService,
   ) {}
@@ -54,97 +52,102 @@ export class OrderService {
   }
 
   async createOrder(createOrder: CreateOrderDto) {
-    const {
-      total = 0,
-      discount = 0,
-      items,
-      couponId,
-      address,
-      country,
-      email,
-      phone,
-      provinceId,
-      districtId,
-      wardCode,
-      name,
-    } = createOrder;
+    try {
+      const {
+        total = 0,
+        discount = 0,
+        items,
+        couponId,
+        address,
+        email,
+        phone,
+        provinceId,
+        districtId,
+        wardCode,
+        name,
+      } = createOrder;
 
-    const { data: shipment, error: shipmentError } =
-      await this.supabaseService.client
-        .from('shipments')
-        .insert({
-          fullName: name,
-          address,
-          country,
-          email,
-          phone,
-          provinceId,
-          districtId,
-          wardCode,
-        })
-        .select('*')
+      const { data: shipment, error: shipmentError } =
+        await this.supabaseService.client
+          .from('shipments')
+          .insert({
+            fullName: name,
+            address,
+            email,
+            phone,
+            provinceId,
+            districtId,
+            wardCode,
+          })
+          .select('*')
+          .single();
+
+      if (shipmentError) throw new Error(shipmentError.message);
+
+      const payment: any = await this.paymentService.createPayment({
+        amount: total,
+        userId: 2,
+      });
+
+      if (!payment) throw new Error('Payment not found');
+
+      const { data: order, error } = await this.supabaseService.client
+        .from('orders')
+        .insert([
+          {
+            userId: 2,
+            paymentId: payment.id,
+            shipmentId: shipment.id,
+            totalAmount: total,
+            discount: Math.round(discount),
+          },
+        ])
+        .select()
         .single();
 
-    const ghnResponse = await this.ghnService.createOrder({
-      items,
-      address,
-      phone,
-      provinceId,
-      districtId,
-      wardCode,
-      name,
-    });
+      if (error) throw new Error(error.message);
 
-    const momoResponse = await this.momoService.createPayment(total.toString());
+      this.orderCouponService.createOrderCoupon({
+        orderId: order.id,
+        couponId: couponId,
+        discountAmount: Math.round(discount),
+      });
 
-    if (shipmentError) throw new Error(shipmentError.message);
+      Promise.all(
+        createOrder.items.map((item) => {
+          return this.orderItemService.createOrderItem({
+            productVariantId: item.id,
+            orderId: order.id,
+            quantity: item.quantity,
+            price: item.price,
+          });
+        }),
+      );
 
-    const payment: any = await this.paymentService.createPayment({
-      amount: 10000,
-      userId: 2,
-    });
+      const ghnResponse = await this.ghnService.createOrder({
+        items,
+        address,
+        phone,
+        provinceId,
+        districtId,
+        wardCode,
+        name,
+      });
 
-    if (!payment) throw new Error('Payment not found');
+      const momoResponse = await this.momoService.createPayment(
+        payment.id,
+        total.toString(),
+      );
 
-    const { data: order, error } = await this.supabaseService.client
-      .from('orders')
-      .insert([
-        {
-          userId: 2,
-          paymentId: payment.id,
-          shipmentId: shipment.id,
-          totalAmount: total,
-          discount,
+      return {
+        statusCode: 200,
+        message: 'Create order successfully',
+        data: {
+          payURL: momoResponse.payUrl,
         },
-      ])
-      .select()
-      .single();
-
-    if (error) throw new Error(error.message);
-
-    this.orderCouponService.createOrderCoupon({
-      orderId: order.id,
-      couponId: couponId,
-      discountAmount: discount,
-    });
-
-    Promise.all(
-      createOrder.items.map((item) => {
-        return this.orderItemService.createOrderItem({
-          productVariantId: item.id,
-          orderId: order.id,
-          quantity: item.quantity,
-          price: item.price,
-        });
-      }),
-    );
-
-    return {
-      statusCode: 200,
-      message: 'Create order successfully',
-      data: {
-        payURL: momoResponse.payUrl,
-      },
-    };
+      };
+    } catch (error) {
+      console.error('Create order error: ', error);
+    }
   }
 }

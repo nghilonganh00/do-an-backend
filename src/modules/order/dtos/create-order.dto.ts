@@ -5,7 +5,6 @@ export class CreateOrderDto {
   couponId: number;
   items: any[];
   address: string;
-  country: string;
   email: string;
   phone: string;
   provinceId: number;

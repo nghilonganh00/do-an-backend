@@ -13,8 +13,8 @@ export class MomoService {
   private readonly partnerCode = 'MOMO';
   private readonly partnerName = 'Test';
   private readonly storeId = 'MomoTestStore';
-  private readonly redirectUrl ='http://localhost:3000/dashboard';
-  private readonly ipnUrl = 'http://localhost:8000/api/momo/ipn';
+  private readonly redirectUrl = 'http://localhost:3000/dashboard';
+  private readonly ipnUrl = 'https://131af77609ce.ngrok-free.app/api/momo/ipn';
   private readonly requestType = 'payWithMethod';
   private readonly lang = 'vi';
   private readonly autoCapture = true;
@@ -26,23 +26,17 @@ export class MomoService {
     private readonly supabaseService: SupabaseService,
   ) {}
 
-  async createPayment(amount: string) {
-    const orderId = this.partnerCode + Date.now();
+  async createPayment(paymentId: number, amount: string) {
+    const orderId = paymentId;
     const requestId = orderId;
     const orderInfo = 'pay with MoMo';
 
     const rawSignature = `accessKey=${this.accessKey}&amount=${amount}&extraData=${this.extraData}&ipnUrl=${this.ipnUrl}&orderId=${orderId}&orderInfo=${orderInfo}&partnerCode=${this.partnerCode}&redirectUrl=${this.redirectUrl}&requestId=${requestId}&requestType=${this.requestType}`;
 
-    this.logger.log('--------------------RAW SIGNATURE----------------');
-    this.logger.log(rawSignature);
-
     const signature = crypto
       .createHmac('sha256', this.secretKey)
       .update(rawSignature)
       .digest('hex');
-
-    this.logger.log('--------------------SIGNATURE----------------');
-    this.logger.log(signature);
 
     const requestBody = {
       partnerCode: this.partnerCode,
@@ -81,60 +75,63 @@ export class MomoService {
   }
 
   async handleIpn(body: any) {
-    console.log('body: ', body);
+    try {
+      const {
+        partnerCode,
+        orderId,
+        requestId,
+        amount,
+        orderInfo,
+        orderType,
+        transId,
+        resultCode,
+        message,
+        payType,
+        responseTime,
+        extraData,
+        signature,
+      } = body;
 
-    const {
-      partnerCode,
-      orderId,
-      requestId,
-      amount,
-      orderInfo,
-      orderType,
-      transId,
-      resultCode,
-      message,
-      payType,
-      responseTime,
-      extraData,
-      signature,
-    } = body;
+      const rawSignature =
+        `accessKey=${this.accessKey}&amount=${amount}&extraData=${extraData}` +
+        `&message=${message}&orderId=${orderId}&orderInfo=${orderInfo}` +
+        `&orderType=${orderType}&partnerCode=${partnerCode}` +
+        `&payType=${payType}&requestId=${requestId}&responseTime=${responseTime}` +
+        `&resultCode=${resultCode}&transId=${transId}`;
 
-    const rawSignature =
-      `accessKey=${this.accessKey}&amount=${amount}&extraData=${extraData}` +
-      `&message=${message}&orderId=${orderId}&orderInfo=${orderInfo}` +
-      `&orderType=${orderType}&partnerCode=${partnerCode}` +
-      `&payType=${payType}&requestId=${requestId}&responseTime=${responseTime}` +
-      `&resultCode=${resultCode}&transId=${transId}`;
+      const checkSignature = crypto
+        .createHmac('sha256', this.secretKey)
+        .update(rawSignature)
+        .digest('hex');
 
-    const checkSignature = crypto
-      .createHmac('sha256', this.secretKey)
-      .update(rawSignature)
-      .digest('hex');
+      if (signature !== checkSignature) {
+        this.logger.error('INVALID SIGNATURE FROM MOMO!');
+        return { message: 'Invalid signature' };
+      }
 
-    if (signature !== checkSignature) {
-      this.logger.error('INVALID SIGNATURE FROM MOMO!');
-      return { message: 'Invalid signature' };
+      const { error } = await this.supabaseService.client
+        .from('payments')
+        .update({
+          status: resultCode === 0 ? 'paid' : 'pending',
+          transactionId: transId,
+          paidAt: new Date(),
+        })
+        .eq('id', orderId);
+
+      if (error) {
+        this.logger.error('Supabase update error: ' + error.message);
+      }
+
+      return {
+        partnerCode,
+        requestId,
+        orderId,
+        resultCode: 0,
+        message: 'Received',
+      };
+    } catch (error) {
+      this.logger.error('Error handling IPN', error.message);
+      throw error;
     }
-
-    const { error } = await this.supabaseService.client
-      .from('payments')
-      .update({
-        status: resultCode === 0 ? 'paid' : 'pending',
-        transactionId: transId,
-        updatedAt: new Date().toISOString(),
-      })
-      .eq('orderId', orderId);
-
-    if (error) {
-      this.logger.error('Supabase update error: ' + error.message);
-    }
-
-    return {
-      partnerCode,
-      requestId,
-      orderId,
-      resultCode: 0,
-      message: 'Received',
-    };
   }
 }

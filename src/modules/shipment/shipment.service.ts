@@ -13,7 +13,6 @@ export class ShipmentService {
     ward,
     district,
     province,
-    country,
   }: {
     fullName: string;
     address: string;
@@ -22,7 +21,6 @@ export class ShipmentService {
     ward: string;
     district: string;
     province: string;
-    country: string;
   }) {
     const { data, error } = await this.supabaseService.client
       .from('shipments')
@@ -34,7 +32,6 @@ export class ShipmentService {
         ward,
         district,
         province,
-        country,
       })
       .select()
       .single();
