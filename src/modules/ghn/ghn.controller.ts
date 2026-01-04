@@ -1,5 +1,6 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { GhnService } from './ghn.service';
+import { CalculateFeeDto } from './dtos/calculate-fee.dto';
 
 @Controller('ghn')
 export class GhnController {
@@ -20,10 +21,10 @@ export class GhnController {
     return this.ghnService.getWardsByDistrict({ districtId });
   }
 
-  // @Post('fee')
-  // async calculateFee(@Body() body: any) {
-  //   return this.ghnService.calculateFee(body);
-  // }
+  @Post('calculate-fee')
+  async calculateFee(@Body() body: CalculateFeeDto): Promise<any> {
+    return this.ghnService.calculateFee(body);
+  }
 
   // @Post('create-order')
   // async createOrder(@Body() body: any) {

@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateOrderDto } from './dtos/create-order.dto';
 import { MomoService } from '../momo/momo.service';
 import { SupabaseService } from '../supabase/supabase.service';
@@ -6,6 +6,10 @@ import { PaymentService } from '../payment/payment.service';
 import { OrderItemsService } from '../order-items/order-items.service';
 import { OrderCouponService } from '../order-coupon/order-coupon.service';
 import { GhnService } from '../ghn/ghn.service';
+import { Order, OrderResponse } from './types';
+import { CreateGHNOrder } from '../ghn/types/ghn-province.interface';
+import { OrderQueryParams } from './types/queryParams';
+import { CouponService } from '../coupon/coupon.service';
 
 @Injectable()
 export class OrderService {
@@ -16,9 +20,10 @@ export class OrderService {
     private readonly paymentService: PaymentService,
     private readonly orderItemService: OrderItemsService,
     private readonly orderCouponService: OrderCouponService,
+    private readonly couponService: CouponService,
   ) {}
 
-  async getAllOrders(query: any) {
+  async getAllOrders(query: OrderQueryParams) {
     const { page = 1, limit = 10, duration = 7 } = query;
 
     const offset = (page - 1) * limit;
@@ -51,15 +56,13 @@ export class OrderService {
     };
   }
 
-  async createOrder(createOrder: CreateOrderDto) {
+  async createOrder(userId: number, createOrder: CreateOrderDto) {
     try {
       const {
         total = 0,
-        discount = 0,
         items,
-        couponId,
+        couponCode,
         address,
-        email,
         phone,
         provinceId,
         districtId,
@@ -67,64 +70,44 @@ export class OrderService {
         name,
       } = createOrder;
 
-      const { data: shipment, error: shipmentError } =
-        await this.supabaseService.client
-          .from('shipments')
-          .insert({
-            fullName: name,
-            address,
-            email,
-            phone,
-            provinceId,
-            districtId,
-            wardCode,
-          })
-          .select('*')
-          .single();
-
-      if (shipmentError) throw new Error(shipmentError.message);
-
-      const payment: any = await this.paymentService.createPayment({
+      const { discount } = await this.couponService.getDiscount({
+        userId: userId,
+        couponCode: couponCode,
         amount: total,
-        userId: 2,
       });
 
-      if (!payment) throw new Error('Payment not found');
+      console.log('discount: ', discount);
 
-      const { data: order, error } = await this.supabaseService.client
-        .from('orders')
-        .insert([
-          {
-            userId: 2,
-            paymentId: payment.id,
-            shipmentId: shipment.id,
-            totalAmount: total,
-            discount: Math.round(discount),
-          },
-        ])
-        .select()
-        .single();
-
-      if (error) throw new Error(error.message);
-
-      this.orderCouponService.createOrderCoupon({
-        orderId: order.id,
-        couponId: couponId,
-        discountAmount: Math.round(discount),
+      const { data: shipmentFee } = await this.ghnService.calculateFee({
+        toWardCode: wardCode,
+        toDistrictId: districtId,
       });
 
-      Promise.all(
-        createOrder.items.map((item) => {
-          return this.orderItemService.createOrderItem({
-            productVariantId: item.id,
-            orderId: order.id,
-            quantity: item.quantity,
-            price: item.price,
-          });
-        }),
-      );
+      console.log('shipmentFee: ', shipmentFee);
 
-      const ghnResponse = await this.ghnService.createOrder({
+      const { data, error } = (await this.supabaseService.client.rpc(
+        'create_order',
+        {
+          p_user_id: userId,
+          p_fullname: name,
+          p_phone: phone,
+          p_address: address,
+          p_province_id: provinceId,
+          p_district_id: districtId,
+          p_ward_code: wardCode,
+          p_total: total - discount + shipmentFee.total,
+          p_items: items,
+          p_payment_url: '1',
+          p_transaction_id: 1,
+          p_discount: discount,
+          p_shipment_fee: shipmentFee.total,
+        },
+      )) as { data: OrderResponse; error: unknown };
+      console.log('data: ', data);
+
+      if (error) throw new Error((error as Error).message);
+
+      const GHNResponse = await this.ghnService.createOrder({
         items,
         address,
         phone,
@@ -132,13 +115,35 @@ export class OrderService {
         districtId,
         wardCode,
         name,
-      });
+      } as CreateGHNOrder);
 
+      await this.supabaseService.client
+        .from('orders')
+        .update({
+          code: GHNResponse.data.order_code,
+        })
+        .eq('id', data.order_id);
+
+      console.log('response: ', GHNResponse);
+
+      const momoOrderId = `${data.payment_id}_${Date.now()}`;
       const momoResponse = await this.momoService.createPayment(
-        payment.id,
+        momoOrderId,
         total.toString(),
       );
 
+      console.log('momoResponse: ', momoResponse);
+
+      if (!momoResponse?.payUrl) throw new Error('Momo payment not found');
+
+      await this.supabaseService.client
+        .from('payments')
+        .update({
+          url: momoResponse.payUrl,
+        })
+        .eq('id', data.payment_id);
+
+      console.log('payUrl: ', momoResponse.payUrl);
       return {
         statusCode: 200,
         message: 'Create order successfully',
@@ -146,8 +151,55 @@ export class OrderService {
           payURL: momoResponse.payUrl,
         },
       };
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Create order error: ', error);
+
+      const errorMessage =
+        error instanceof Error ? error.message : 'An unexpected error occurred';
+
+      throw new BadRequestException(errorMessage);
+    }
+  }
+
+  async updateStatus(id: number, status: string) {
+    try {
+      const { error } = await this.supabaseService.client
+        .from('orders')
+        .update({
+          status,
+        })
+        .eq('id', id);
+
+      console.log('error: ', error);
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : 'An unexpected error occurred';
+      throw new BadRequestException(errorMessage);
+    }
+  }
+
+  async getMyOrders(userId: number, query: OrderQueryParams): Promise<Order[]> {
+    const { page = 1, limit = 10 } = query;
+    const from = (page - 1) * limit;
+    const to = from + limit - 1;
+
+    try {
+      const { data, error } = await this.supabaseService.client
+        .from('orders')
+        .select('*, payment:payments(*)')
+        .eq('userId', userId)
+        .range(from, to);
+
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      return data as Order[];
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : 'Get My Order Error';
+
+      throw new BadRequestException(errorMessage);
     }
   }
 }

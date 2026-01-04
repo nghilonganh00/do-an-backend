@@ -23,3 +23,29 @@ export class GhnProvinceResponse {
   message: string;
   data: GhnProvince[];
 }
+
+export type GHNCalculateFee = {
+  data: {
+    total: number;
+  };
+};
+
+export type CreateGHNOrder = {
+  items: any[];
+  address: string;
+  phone: string;
+  provinceId: number;
+  districtId: number;
+  wardCode: string;
+  name: string;
+};
+
+export type GHNOrder = {
+  status: string;
+};
+
+export type GHNCreateOrderResponse = {
+  data: {
+    order_code: string;
+  };
+};

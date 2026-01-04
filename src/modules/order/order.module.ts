@@ -9,9 +9,10 @@ import { OrderCouponService } from '../order-coupon/order-coupon.service';
 import { GhnService } from '../ghn/ghn.service';
 import { GhnModule } from '../ghn/ghn.module';
 import { HttpModule } from '@nestjs/axios';
+import { CouponModule } from '../coupon/coupon.module';
 
 @Module({
-  imports: [GhnModule, HttpModule, MomoModule],
+  imports: [GhnModule, HttpModule, MomoModule, CouponModule],
   providers: [
     OrderService,
     PaymentService,
@@ -19,6 +20,7 @@ import { HttpModule } from '@nestjs/axios';
     OrderItemsService,
     OrderCouponService,
     GhnService,
+    ShipmentService,
   ],
   controllers: [OrderController],
   exports: [OrderService],

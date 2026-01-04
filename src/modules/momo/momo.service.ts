@@ -3,6 +3,7 @@ import { HttpService } from '@nestjs/axios';
 import { lastValueFrom } from 'rxjs';
 import * as crypto from 'crypto';
 import { SupabaseService } from '../supabase/supabase.service';
+import { MomoResponse } from './types';
 
 @Injectable()
 export class MomoService {
@@ -14,7 +15,8 @@ export class MomoService {
   private readonly partnerName = 'Test';
   private readonly storeId = 'MomoTestStore';
   private readonly redirectUrl = 'http://localhost:3000/dashboard';
-  private readonly ipnUrl = 'https://131af77609ce.ngrok-free.app/api/momo/ipn';
+  private readonly ipnUrl =
+    'https://overslow-lucy-unmodest.ngrok-free.dev/api/momo/ipn';
   private readonly requestType = 'payWithMethod';
   private readonly lang = 'vi';
   private readonly autoCapture = true;
@@ -26,7 +28,10 @@ export class MomoService {
     private readonly supabaseService: SupabaseService,
   ) {}
 
-  async createPayment(paymentId: number, amount: string) {
+  async createPayment(
+    paymentId: string,
+    amount: string,
+  ): Promise<MomoResponse> {
     const orderId = paymentId;
     const requestId = orderId;
     const orderInfo = 'pay with MoMo';
@@ -67,14 +72,29 @@ export class MomoService {
       this.logger.log('Status: ' + response.status);
       this.logger.log('Body: ' + JSON.stringify(response.data));
 
-      return response.data;
+      return response.data as MomoResponse;
     } catch (error: any) {
-      this.logger.error('Error sending payment request', error.message);
+      this.logger.error('Error sending payment request', JSON.stringify(error));
       throw error;
     }
   }
 
-  async handleIpn(body: any) {
+  async handleIpn(body: {
+    partnerCode: string;
+    orderId: string;
+    requestId: string;
+    amount: string;
+    orderInfo: string;
+    orderType: string;
+    transId: string;
+    resultCode: string;
+    message: string;
+    payType: string;
+    responseTime: string;
+    extraData: string;
+    signature: string;
+  }) {
+    console.log('body: ', body);
     try {
       const {
         partnerCode,
@@ -99,6 +119,10 @@ export class MomoService {
         `&payType=${payType}&requestId=${requestId}&responseTime=${responseTime}` +
         `&resultCode=${resultCode}&transId=${transId}`;
 
+      const paymentId: string = orderId.split('_')?.[0];
+
+      console.log('paymentId: ', paymentId);
+
       const checkSignature = crypto
         .createHmac('sha256', this.secretKey)
         .update(rawSignature)
@@ -112,11 +136,11 @@ export class MomoService {
       const { error } = await this.supabaseService.client
         .from('payments')
         .update({
-          status: resultCode === 0 ? 'paid' : 'pending',
+          status: Number(resultCode) === 0 ? 'paid' : 'pending',
           transactionId: transId,
           paidAt: new Date(),
         })
-        .eq('id', orderId);
+        .eq('id', paymentId);
 
       if (error) {
         this.logger.error('Supabase update error: ' + error.message);
@@ -129,8 +153,10 @@ export class MomoService {
         resultCode: 0,
         message: 'Received',
       };
-    } catch (error) {
-      this.logger.error('Error handling IPN', error.message);
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : 'Unknown error';
+      this.logger.error('Error handling IPN', errorMessage);
       throw error;
     }
   }

@@ -1,9 +1,21 @@
 // src/ghn/ghn.service.ts
-import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
+import {
+  Injectable,
+  HttpException,
+  HttpStatus,
+  BadRequestException,
+} from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { ConfigService } from '@nestjs/config';
 import { lastValueFrom } from 'rxjs';
-import { GhnProvinceResponse } from './types/ghn-province.interface';
+import {
+  CreateGHNOrder,
+  GHNCalculateFee,
+  GHNCreateOrderResponse,
+  GHNOrder,
+  GhnProvinceResponse,
+} from './types/ghn-province.interface';
+import { CalculateFeeDto } from './dtos/calculate-fee.dto';
 
 @Injectable()
 export class GhnService {
@@ -100,30 +112,9 @@ export class GhnService {
     }
   }
 
-  async calculateFee(data: any) {
-    try {
-      const payload = {
-        from_district_id: 1454, // Ví dụ: Quận 3, HCM (Kho của bạn)
-        service_type_id: 2, // 2: Chuẩn, 53320: Bay... (Tuỳ chọn)
-        ...data, // Truyền to_district_id, to_ward_code, weight, height, length, width
-      };
-
-      const response = await lastValueFrom(
-        this.httpService.post(`${this.apiUrl}/shipping-order/fee`, payload, {
-          headers: this.getHeaders(),
-        }),
-      );
-      return response.data;
-    } catch (error) {
-      throw new HttpException(
-        error.response?.data || 'GHN Calculate Fee Error',
-        HttpStatus.BAD_REQUEST,
-      );
-    }
-  }
-
-  // 3. Tạo đơn hàng (Create Order)
-  async createOrder(orderData: any) {
+  async createOrder(
+    orderData: CreateGHNOrder,
+  ): Promise<GHNCreateOrderResponse> {
     const { items, address, phone, provinceId, districtId, wardCode, name } =
       orderData;
     try {
@@ -191,6 +182,73 @@ export class GhnService {
         error.response?.data || 'GHN Create Order Error',
         HttpStatus.BAD_REQUEST,
       );
+    }
+  }
+
+  async calculateFee(orderData: CalculateFeeDto): Promise<GHNCalculateFee> {
+    const { toWardCode, toDistrictId } = orderData;
+
+    try {
+      const payload = {
+        from_district_id: 1454,
+        from_ward_code: '21211',
+        service_id: 100039,
+        service_type_id: 5,
+        to_district_id: toDistrictId,
+        to_ward_code: toWardCode.toString(),
+        height: 50,
+        length: 20,
+        weight: 1000,
+        width: 20,
+        insurance_value: 10000,
+        cod_failed_amount: 2000,
+        coupon: null,
+        items: [
+          {
+            name: 'TEST1',
+            quantity: 1,
+            height: 200,
+            weight: 1000,
+            length: 200,
+            width: 200,
+          },
+        ],
+      };
+
+      const response = await lastValueFrom(
+        this.httpService.post(`${this.apiUrl}/v2/shipping-order/fee`, payload, {
+          headers: this.getHeaders(),
+        }),
+      );
+
+      return response.data;
+    } catch (error) {
+      console.error('GHN Calculate Fee Error:', error);
+      throw new HttpException(
+        error || 'GHN Calculate Fee Error',
+        HttpStatus.BAD_REQUEST,
+      );
+    }
+  }
+
+  async getStatusOrder(orderCode: string): Promise<GHNOrder> {
+    try {
+      const response: { data: { data: GHNOrder } } = await lastValueFrom(
+        this.httpService.get(`${this.apiUrl}/v2/shipping-order/detail`, {
+          headers: this.getHeaders(),
+          params: {
+            order_code: orderCode,
+          },
+          timeout: 10000,
+        }),
+      );
+      return response.data.data;
+    } catch (error) {
+      // Log lỗi chi tiết để debug
+      const errorMessage =
+        error instanceof Error ? error.message : 'Get Status Order Error';
+
+      throw new BadRequestException(errorMessage);
     }
   }
 }

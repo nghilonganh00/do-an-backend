@@ -1,5 +1,6 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { SupabaseService } from '../supabase/supabase.service';
+import { Payment } from './types';
 
 @Injectable()
 export class PaymentService {
@@ -49,7 +50,13 @@ export class PaymentService {
     };
   }
 
-  async createPayment({ amount, userId }: { amount: number; userId: number }) {
+  async createPayment({
+    amount,
+    userId,
+  }: {
+    amount: number;
+    userId: number;
+  }): Promise<Payment> {
     const { data, error } = await this.supabaseService.client
       .from('payments')
       .insert({
@@ -57,7 +64,7 @@ export class PaymentService {
         userId,
       })
       .select()
-      .single();
+      .single<Payment>();
 
     if (error) throw new Error(error.message);
 

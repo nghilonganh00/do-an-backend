@@ -14,12 +14,16 @@ import { ProductModule } from './modules/product/product.module';
 import { CouponModule } from './modules/coupon/coupon.module';
 import { ChatbotModule } from './modules/chatbot/chatbot.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { ScheduleModule } from '@nestjs/schedule';
+import { TasksModule } from './modules/tasks/tasks.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
     }),
+    ScheduleModule.forRoot(),
+    TasksModule,
     SupabaseModule,
     AuthModule,
     GhnModule,
