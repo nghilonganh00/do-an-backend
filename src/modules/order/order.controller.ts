@@ -3,6 +3,7 @@ import {
   Controller,
   Get,
   Inject,
+  Param,
   Post,
   Query,
   UseGuards,
@@ -49,5 +50,24 @@ export class OrderController {
       message: 'Get my orders successfully',
       data,
     };
+  }
+
+  @Get('/code/:orderCode')
+  @UseGuards(JwtAuthGuard)
+  async getOrderInfo(@Param('orderCode') orderCode: string) {
+    const data = await this.orderService.getOrderInfo(orderCode);
+
+    return {
+      statusCode: 200,
+      message: 'Get order info successfully',
+      data,
+    };
+  }
+
+  @Get('cancel/:orderCode')
+  // @UseGuards(JwtAuthGuard)
+  async cancelOrder(@Param('orderCode') orderCode: string) {
+    console.log('orderCode: ', orderCode);
+    return this.orderService.cancelOrder(orderCode);
   }
 }

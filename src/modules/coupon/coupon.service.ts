@@ -1,13 +1,12 @@
 import { Injectable } from '@nestjs/common';
 import { SupabaseService } from '../supabase/supabase.service';
-import { QueryParams } from 'src/types/queryParams';
 import { Coupon } from './types/coupon.entity';
 
 @Injectable()
 export class CouponService {
   constructor(private readonly supabaseService: SupabaseService) {}
 
-  async getAllCoupons(query: QueryParams) {}
+  // async getAllCoupons(query: QueryParams) {}
 
   async getCouponById(id: number) {
     const { data: coupon, error } = await this.supabaseService.client
@@ -48,7 +47,7 @@ export class CouponService {
     userId: number;
     couponCode: string;
     amount: number;
-  }): Promise<{ discount: number }> {
+  }): Promise<{ couponId: number; discount: number }> {
     try {
       const { data: coupon, error: couponError } =
         await this.supabaseService.client
@@ -74,11 +73,13 @@ export class CouponService {
 
       if (coupon.discountType === 'percent') {
         return {
-          discount: (amount * coupon.discountValue) / 100,
+          couponId: coupon.id,
+          discount: amount * coupon.discountValue,
         };
       }
 
       return {
+        couponId: coupon.id,
         discount: coupon.discountValue,
       };
     } catch (error) {

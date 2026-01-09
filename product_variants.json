@@ -1,0 +1,826 @@
+[
+  {
+    "id": 20,
+    "price": 23490000,
+    "stock": 4,
+    "variantName": "Titan Tự Nhiện",
+    "productName": "iPhone 16 Pro 128GB",
+    "description": "Titan Tự Nhiện Sản phẩm điện thoại iPhone 16 Pro bộ nhớ 128GB, phiên bản màu Titan Tự Nhiên. Giá bán hiện tại: 23.490.000 VNĐ (giá gốc: 25.490.000 VNĐ). Tình trạng: Còn hàng (4 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 Pro (3nm thế hệ 2) hiệu năng cao, RAM 8GB. Màn hình 6.3 inch Super Retina XDR OLED, tần số quét ProMotion 120Hz mượt mà. Hệ thống Camera Fusion 48MP + Ultra Wide 48MP + Telephoto 5x 12MP. Hỗ trợ quay video 4K 120fps Dolby Vision, nút Camera Control chuyên dụng. Tính năng Apple Intelligence, kết nối Wifi 7, khung viền Titan Grade 5 bền bỉ."
+  },
+  {
+    "id": 21,
+    "price": 22690000,
+    "stock": 1000,
+    "variantName": "Xanh Lưu Ly",
+    "productName": "iPhone 16 Plus 128GB",
+    "description": "Xanh Lưu Ly Sản phẩm điện thoại iPhone 16 Plus bộ nhớ 128GB, phiên bản màu Xanh Lưu Ly (Ultramarine). Giá bán hiện tại: 22.690.000 VNĐ (giá gốc: 24.690.000 VNĐ). Tình trạng: Còn hàng (1000 sản phẩm). Thông số kỹ thuật chi tiết: Chip Apple A18, RAM 8GB. Màn hình lớn 6.7 inch Super Retina XDR OLED, độ sáng tối đa 2000 nits. Camera chính Fusion 48MP + Ultra Wide 12MP (hỗ trợ chụp Macro). Trang bị nút Action Button và nút Camera Control cảm ứng lực. Thời lượng pin ấn tượng, hỗ trợ sạc MagSafe 25W. Tích hợp Apple Intelligence."
+  },
+  {
+    "id": 22,
+    "price": 34890000,
+    "stock": 100,
+    "variantName": "Titan Tự Nhiện",
+    "productName": "iPhone 16 Pro Max 512GB",
+    "description": "Titan Tự Nhiện Sản phẩm điện thoại iPhone 16 Pro Max bộ nhớ 512GB, phiên bản màu Titan Tự Nhiên. Giá bán hiện tại: 34.890.000 VNĐ (giá gốc: 36.890.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 Pro mạnh nhất phân khúc, RAM 8GB. Màn hình lớn kỷ lục 6.9 inch Super Retina XDR, viền siêu mỏng, ProMotion 120Hz. Camera bộ ba: Fusion 48MP + Ultra Wide 48MP + Telephoto 5x. Pin dung lượng lớn nhất lịch sử iPhone. Khung viền Titan nhám, hỗ trợ Wifi 7 và 5G Advanced."
+  },
+  {
+    "id": 24,
+    "price": 13490000,
+    "stock": 100,
+    "variantName": "Đen",
+    "productName": "iPhone 16e 256GB",
+    "description": "Đen Sản phẩm điện thoại iPhone 16e (phiên bản giá rẻ) bộ nhớ 256GB, màu Đen. Giá bán hiện tại: 13.490.000 VNĐ (giá gốc: 15.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18, RAM 8GB. Màn hình 6.1 inch OLED (tần số quét 60Hz). Camera sau đơn Fusion 48MP hỗ trợ chụp chân dung và chế độ ban đêm sắc nét. Thiết kế nhôm tái chế thân thiện môi trường. Hỗ trợ đầy đủ các tính năng Apple Intelligence cơ bản."
+  },
+  {
+    "id": 25,
+    "price": 40990000,
+    "stock": 100,
+    "variantName": "Titan Sa Mạc",
+    "productName": "iPhone 16 Pro Max 1TB",
+    "description": "Titan Sa Mạc Sản phẩm điện thoại iPhone 16 Pro Max dung lượng khủng 1TB, phiên bản màu Titan Sa Mạc (Desert Titanium). Giá bán hiện tại: 40.990.000 VNĐ (giá gốc: 42.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 Pro, RAM 8GB. Màn hình 6.9 inch 120Hz ProMotion. Camera 48MP quay phim chuyên nghiệp ProRes log. Màu sắc Titan Sa Mạc ánh vàng sang trọng mới nhất năm nay. Pin và hiệu năng tối đa cho người dùng chuyên nghiệp."
+  },
+  {
+    "id": 26,
+    "price": 25890000,
+    "stock": 100,
+    "variantName": "Xanh Lưu Ly",
+    "productName": "iPhone 16 Plus 256GB",
+    "description": "Xanh Lưu Ly Sản phẩm điện thoại iPhone 16 Plus bộ nhớ 256GB, màu Xanh Lưu Ly. Giá bán hiện tại: 25.890.000 VNĐ (giá gốc: 27.890.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18, RAM 8GB. Màn hình 6.7 inch OLED rộng rãi giải trí tốt. Pin sử dụng cả ngày dài. Camera Fusion 48MP zoom 2x như ống kính quang học. Đầy đủ nút Action và Camera Control."
+  },
+  {
+    "id": 27,
+    "price": 37690000,
+    "stock": 100,
+    "variantName": "Titan Sa Mạc",
+    "productName": "iPhone 16 Pro 1TB",
+    "description": "Titan Sa Mạc Sản phẩm điện thoại iPhone 16 Pro bộ nhớ 1TB, màu Titan Sa Mạc. Giá bán hiện tại: 37.690.000 VNĐ (giá gốc: 43.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 Pro, RAM 8GB. Màn hình 6.3 inch 120Hz. Camera tele 5x (nâng cấp từ 3x của dòng 15 Pro). Quay video 4K 120fps. Thích hợp lưu trữ video chất lượng cao và file làm việc lớn."
+  },
+  {
+    "id": 28,
+    "price": 28990000,
+    "stock": 100,
+    "variantName": "Titan Sa Mạc",
+    "productName": "iPhone 16 Pro 256GB",
+    "description": "Titan Sa Mạc Sản phẩm điện thoại iPhone 16 Pro bộ nhớ 256GB, màu Titan Sa Mạc. Giá bán hiện tại: 28.990.000 VNĐ (giá gốc: 31.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 Pro, RAM 8GB. Màn hình 6.3 inch ProMotion. 4 Micro chuẩn studio lọc gió thông minh. Camera 48MP góc siêu rộng mới."
+  },
+  {
+    "id": 29,
+    "price": 22990000,
+    "stock": 100,
+    "variantName": "Xanh Lưu Ly",
+    "productName": "iPhone 16 256GB",
+    "description": "Xanh Lưu Ly Sản phẩm điện thoại iPhone 16 bộ nhớ 256GB, màu Xanh Lưu Ly. Giá bán hiện tại: 22.990.000 VNĐ (giá gốc: 25.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18, RAM 8GB. Màn hình 6.1 inch. Camera chính 48MP. Kính pha màu ở mặt lưng bền bỉ và thẩm mỹ cao. Sạc nhanh USB-C và MagSafe."
+  },
+  {
+    "id": 30,
+    "price": 33490000,
+    "stock": 100,
+    "variantName": "Titan Sa Mạc",
+    "productName": "iPhone 16 Pro 512GB",
+    "description": "Titan Sa Mạc Sản phẩm điện thoại iPhone 16 Pro bộ nhớ 512GB, màu Titan Sa Mạc. Giá bán hiện tại: 33.490.000 VNĐ (giá gốc: 37.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 Pro, RAM 8GB. Màn hình 6.3 inch 120Hz. Cấu hình mạnh mẽ cân mọi tác vụ đồ họa và game nặng."
+  },
+  {
+    "id": 31,
+    "price": 15090000,
+    "stock": 100,
+    "variantName": "Hồng",
+    "productName": "iPhone 15 128GB",
+    "description": "Hồng Sản phẩm điện thoại iPhone 15 bộ nhớ 128GB, màu Hồng phấn (Pink). Giá bán hiện tại: 15.090.000 VNĐ (giá gốc: 17.090.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic (4nm), RAM 6GB. Màn hình 6.1 inch Dynamic Island tiện lợi. Camera chính 48MP độ phân giải cao. Cổng sạc USB-C 2.0. Mặt lưng kính pha màu nhám mịn."
+  },
+  {
+    "id": 32,
+    "price": 18390000,
+    "stock": 100,
+    "variantName": "Hồng",
+    "productName": "iPhone 15 256GB",
+    "description": "Hồng Sản phẩm điện thoại iPhone 15 bộ nhớ 256GB, màu Hồng. Giá bán hiện tại: 18.390.000 VNĐ (giá gốc: 20.390.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic, RAM 6GB. Màn hình Dynamic Island độ sáng 2000 nits ngoài trời. Camera 48MP zoom 2x telephoto. Cổng USB-C."
+  },
+  {
+    "id": 33,
+    "price": 21290000,
+    "stock": 100,
+    "variantName": "Hồng ",
+    "productName": "iPhone 15 Plus 256GB",
+    "description": "Hồng  Sản phẩm điện thoại iPhone 15 Plus bộ nhớ 256GB, màu Hồng. Giá bán hiện tại: 21.290.000 VNĐ (giá gốc: 25.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic, RAM 6GB. Màn hình lớn 6.7 inch Dynamic Island. Pin cực trâu lên đến 26 giờ xem video. Camera 48MP sắc nét."
+  },
+  {
+    "id": 11,
+    "price": 24990000,
+    "stock": 103,
+    "variantName": "Màu đen",
+    "productName": "iPhone 17 256GB",
+    "description": "Màu đen Sản phẩm điện thoại iPhone 17 (Dự kiến) bộ nhớ 256GB, màu Đen. Giá bán hiện tại: 24.990.000 VNĐ. Tình trạng: Còn hàng (103 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 hiệu năng vượt trội, RAM 8GB. Màn hình 6.1 inch nâng cấp lên tần số quét 120Hz LTPO (ProMotion trên dòng thường). Camera sau kép 48MP + 48MP. Camera trước 24MP sắc nét."
+  },
+  {
+    "id": 13,
+    "price": 22990000,
+    "stock": 10,
+    "variantName": "Xanh Lá Xô Thơm",
+    "productName": "iPhone 17 256GB",
+    "description": "Xanh Lá Xô Thơm Sản phẩm điện thoại iPhone 17 (Dự kiến) bộ nhớ 256GB, màu Đen. Giá bán hiện tại: 24.990.000 VNĐ. Tình trạng: Còn hàng (103 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 hiệu năng vượt trội, RAM 8GB. Màn hình 6.1 inch nâng cấp lên tần số quét 120Hz LTPO (ProMotion trên dòng thường). Camera sau kép 48MP + 48MP. Camera trước 24MP sắc nét."
+  },
+  {
+    "id": 34,
+    "price": 25490000,
+    "stock": 100,
+    "variantName": "Titan Trắng",
+    "productName": "iPhone 15 Pro 256GB",
+    "description": "Titan Trắng Sản phẩm điện thoại iPhone 15 Pro bộ nhớ 256GB, màu Titan Trắng. Giá bán hiện tại: 25.490.000 VNĐ (giá gốc: 26.290.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A17 Pro (3nm đầu tiên), RAM 8GB. Khung viền Titan nhẹ và bền. Nút Action Button. Cổng USB-C 3.0 tốc độ truyền dữ liệu 10Gb/s. Camera 48MP. Màn hình 6.1 inch 120Hz."
+  },
+  {
+    "id": 35,
+    "price": 17690000,
+    "stock": 100,
+    "variantName": "Hồng ",
+    "productName": "iPhone 15 Plus 128GB",
+    "description": "Hồng  Sản phẩm điện thoại iPhone 15 Plus bộ nhớ 128GB, màu Hồng. Giá bán hiện tại: 17.690.000 VNĐ (giá gốc: 22.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic, RAM 6GB. Màn hình 6.7 inch Dynamic Island. Thiết kế bo cong mềm mại cầm nắm thoải mái."
+  },
+  {
+    "id": 36,
+    "price": 23990000,
+    "stock": 100,
+    "variantName": "Titan Xanh",
+    "productName": "iPhone 15 Pro 128GB",
+    "description": "Titan Xanh Sản phẩm điện thoại iPhone 15 Pro bộ nhớ 128GB, màu Titan Xanh (Blue Titanium). Giá bán hiện tại: 23.990.000 VNĐ (giá gốc: 28.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A17 Pro chơi game Ray Tracing phần cứng. RAM 8GB. Camera tele 3x. Quay video Log/ProRes.\"\r\n  "
+  },
+  {
+    "id": 37,
+    "price": 28490000,
+    "stock": 100,
+    "variantName": "Titan Xanh",
+    "productName": "iPhone 15 Pro Max 512GB",
+    "description": "Titan Xanh Sản phẩm điện thoại iPhone 15 Pro Max bộ nhớ 512GB, màu Titan Xanh. Giá bán hiện tại: 28.490.000 VNĐ (giá gốc: 40.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A17 Pro. Camera độc quyền ống kính tiềm vọng zoom quang 5x (120mm). Màn hình 6.7 inch 120Hz. Pin dung lượng lớn."
+  },
+  {
+    "id": 16,
+    "price": 33990000,
+    "stock": 99,
+    "variantName": "Xanh Da Trời",
+    "productName": "iPhone Air 512GB",
+    "description": "Xanh Da Trời Sản phẩm điện thoại iPhone Air (Slim) bộ nhớ 512GB, màu Xanh Da Trời. Giá bán hiện tại: 33.990.000 VNĐ (giá gốc: 35.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19, thiết kế siêu mỏng đột phá."
+  },
+  {
+    "id": 0,
+    "price": 61990000,
+    "stock": 11,
+    "variantName": "Cam vũ trụ",
+    "productName": "iPhone 17 Pro Max 2TB",
+    "description": "Cam vũ trụ Sản phẩm điện thoại iPhone 17 Pro Max (Dự kiến) dung lượng cực đại 2TB, màu Cam vũ trụ (Cosmic Orange). Giá bán hiện tại: 61.990.000 VNĐ (giá gốc: 63.990.000 VNĐ). Tình trạng: Còn hàng (11 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro (quy trình 2nm), RAM 12GB đa nhiệm cực đỉnh. 3 Camera sau đều đạt độ phân giải 48MP (Chính, Góc rộng, Telephoto). Camera trước nâng cấp 24MP. Wifi 7, Face ID ẩn dưới màn hình."
+  },
+  {
+    "id": 14,
+    "price": 45590000,
+    "stock": 100,
+    "variantName": "Cam vũ trụ",
+    "productName": "iPhone 17 Pro 1TB",
+    "description": "Cam vũ trụ Sản phẩm điện thoại iPhone 17 Pro bộ nhớ 1TB, màu Cam vũ trụ. Giá bán hiện tại: 45.590.000 VNĐ (giá gốc: 47.590.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro, RAM 12GB. Màn hình ProMotion 120Hz siêu sáng. Hệ thống 3 camera 48MP."
+  },
+  {
+    "id": 15,
+    "price": 28790000,
+    "stock": 100,
+    "variantName": "Xanh Da Trời",
+    "productName": "iPhone Air 256GB",
+    "description": "Xanh Da Trời Sản phẩm điện thoại iPhone Air (iPhone Slim) bộ nhớ 256GB, màu Xanh Da Trời. Giá bán hiện tại: 28.790.000 VNĐ (giá gốc: 30.790.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Thiết kế siêu mỏng (khoảng 5-6mm), khung hợp kim Nhôm-Titan. Chip A19. Màn hình 6.6 inch 120Hz. Camera đơn hoặc kép đặt ngang ở giữa lưng máy. Tập trung vào thời trang và độ mỏng nhẹ."
+  },
+  {
+    "id": 17,
+    "price": 39490000,
+    "stock": 100,
+    "variantName": "Xanh Da Trời",
+    "productName": "iPhone Air 1TB",
+    "description": "Xanh Da Trời Sản phẩm điện thoại iPhone Air (Slim) bộ nhớ 1TB, màu Xanh Da Trời. Giá bán hiện tại: 39.490.000 VNĐ (giá gốc: 41.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19, thiết kế siêu mỏng, dung lượng lưu trữ lớn."
+  },
+  {
+    "id": 18,
+    "price": 28590000,
+    "stock": 100,
+    "variantName": "Titan Sa Mạc",
+    "productName": "iPhone 16 Pro Max 256GB",
+    "description": "Titan Sa Mạc Sản phẩm điện thoại iPhone 16 Pro Max bộ nhớ 256GB, màu Titan Sa Mạc. Giá bán hiện tại: 28.590.000 VNĐ (giá gốc: 30.590.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 Pro, RAM 8GB. Màn hình 6.9 inch lớn nhất. Camera zoom 5x. Màu vàng đồng sang trọng."
+  },
+  {
+    "id": 19,
+    "price": 10490000,
+    "stock": 100,
+    "variantName": "Đen",
+    "productName": "iPhone 16e 128GB",
+    "description": "Đen Sản phẩm điện thoại iPhone 16e bộ nhớ 128GB, màu Đen. Giá bán hiện tại: 10.490.000 VNĐ (giá gốc: 12.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18, RAM 8GB. Phân khúc giá rẻ dễ tiếp cận. Màn hình OLED 6.1 inch. Camera đơn 48MP chất lượng cao."
+  },
+  {
+    "id": 38,
+    "price": 31990000,
+    "stock": 100,
+    "variantName": "Titan Trắng",
+    "productName": "iPhone 15 Pro Max 1TB",
+    "description": "Titan Trắng Sản phẩm điện thoại iPhone 15 Pro Max bộ nhớ 1TB, màu Titan Trắng. Giá bán hiện tại: 31.990.000 VNĐ (giá gốc: 46.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A17 Pro. Khung Titan, USB-C 3.0. Zoom quang 5x. Dung lượng lớn thoải mái lưu trữ."
+  },
+  {
+    "id": 39,
+    "price": 11690000,
+    "stock": 100,
+    "variantName": "Xanh",
+    "productName": "iPhone 14 128GB",
+    "description": "Xanh Sản phẩm điện thoại iPhone 14 bộ nhớ 128GB, màu Xanh dương (Blue). Giá bán hiện tại: 11.690.000 VNĐ (giá gốc: 13.690.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A15 Bionic (5 nhân GPU), RAM 6GB. Màn hình 6.1 inch tai thỏ (Notch). Camera kép 12MP chụp thiếu sáng tốt. Cổng sạc Lightning."
+  },
+  {
+    "id": 40,
+    "price": 14290000,
+    "stock": 200,
+    "variantName": "Xanh",
+    "productName": "iPhone 14 256GB",
+    "description": "Xanh Sản phẩm điện thoại iPhone 14 bộ nhớ 256GB, màu Xanh dương. Giá bán hiện tại: 14.290.000 VNĐ (giá gốc: 16.290.000 VNĐ). Tình trạng: Còn hàng (200 sản phẩm). Thông số kỹ thuật chi tiết: Chip A15 Bionic, RAM 6GB. Tính năng phát hiện va chạm (Crash Detection). Pin bền bỉ cả ngày."
+  },
+  {
+    "id": 41,
+    "price": 25590000,
+    "stock": 100,
+    "variantName": "Bạc",
+    "productName": "iPhone 14 Pro Max 128GB",
+    "description": "Bạc Sản phẩm điện thoại iPhone 14 Pro Max bộ nhớ 128GB, màu Bạc (Silver). Giá bán hiện tại: 25.590.000 VNĐ (giá gốc: 29.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic (4nm), RAM 6GB. Màn hình Dynamic Island 6.7 inch 120Hz. Camera chính 48MP lần đầu xuất hiện. Cổng Lightning. Khung thép không gỉ."
+  },
+  {
+    "id": 42,
+    "price": 27990000,
+    "stock": 200,
+    "variantName": "Tím",
+    "productName": "iPhone 14 Pro Max 256GB",
+    "description": "Tím Sản phẩm điện thoại iPhone 14 Pro Max bộ nhớ 256GB, màu Tím đậm (Deep Purple). Giá bán hiện tại: 27.990.000 VNĐ (giá gốc: 32.990.000 VNĐ). Tình trạng: Còn hàng (200 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic. Màu tím signature đặc trưng. Màn hình Always-On Display. Camera quay phim Cinematic Mode 4K."
+  },
+  {
+    "id": 43,
+    "price": 22990000,
+    "stock": 100,
+    "variantName": "Vàng",
+    "productName": "iPhone 14 Pro 128GB",
+    "description": "Vàng Sản phẩm điện thoại iPhone 14 Pro bộ nhớ 128GB, màu Vàng (Gold). Giá bán hiện tại: 22.990.000 VNĐ (giá gốc: 27.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic, RAM 6GB. Màn hình 6.1 inch Dynamic Island 120Hz. 3 Camera sau chuyên nghiệp."
+  },
+  {
+    "id": 44,
+    "price": 35390000,
+    "stock": 200,
+    "variantName": "Tím",
+    "productName": "iPhone 14 Pro Max 512GB",
+    "description": "Tím Sản phẩm điện thoại iPhone 14 Pro Max bộ nhớ 512GB, màu Tím đậm. Giá bán hiện tại: 35.390.000 VNĐ (giá gốc: 38.990.000 VNĐ). Tình trạng: Còn hàng (200 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic. Màn hình lớn, pin trâu, dung lượng cao."
+  },
+  {
+    "id": 45,
+    "price": 15990000,
+    "stock": 100,
+    "variantName": "Tím",
+    "productName": "iPhone 14 Plus 128GB",
+    "description": "Tím Sản phẩm điện thoại iPhone 14 Plus bộ nhớ 128GB, màu Tím nhạt (Purple). Giá bán hiện tại: 15.990.000 VNĐ (giá gốc: 19.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A15 Bionic, RAM 6GB. Màn hình lớn 6.7 inch tai thỏ. Pin cực tốt. Camera kép 12MP. Trọng lượng nhẹ hơn bản Pro Max."
+  },
+  {
+    "id": 46,
+    "price": 24990000,
+    "stock": 100,
+    "variantName": "Tím",
+    "productName": "iPhone 14 Pro 256GB",
+    "description": "Tím Sản phẩm điện thoại iPhone 14 Pro bộ nhớ 256GB, màu Tím đậm. Giá bán hiện tại: 24.990.000 VNĐ (giá gốc: 29.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A16 Bionic. Màn hình 6.1 inch nhỏ gọn mạnh mẽ. Dynamic Island."
+  },
+  {
+    "id": 47,
+    "price": 38590000,
+    "stock": 100,
+    "variantName": "Cam vũ trụ",
+    "productName": "iPhone 17 Pro 512GB",
+    "description": "Cam vũ trụ Sản phẩm điện thoại iPhone 17 Pro bộ nhớ 512GB, màu Xanh Đậm (Deep Blue/Teal). Giá bán hiện tại: 38.590.000 VNĐ (giá gốc: 41.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro, RAM 12GB. Wifi 7 tốc độ cao."
+  },
+  {
+    "id": 48,
+    "price": 38590000,
+    "stock": 100,
+    "variantName": "Xanh Đậm",
+    "productName": "iPhone 17 Pro 512GB",
+    "description": "Xanh Đậm Sản phẩm điện thoại iPhone 17 Pro bộ nhớ 512GB, màu Xanh Đậm (Deep Blue/Teal). Giá bán hiện tại: 38.590.000 VNĐ (giá gốc: 41.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro, RAM 12GB. Wifi 7 tốc độ cao."
+  },
+  {
+    "id": 49,
+    "price": 29490000,
+    "stock": 100,
+    "variantName": "Xanh Lam Khói ",
+    "productName": "iPhone 17 512GB",
+    "description": "Xanh Lam Khói  Sản phẩm điện thoại iPhone 17 bộ nhớ 512GB, màu Xanh Lam Khói. Giá bán hiện tại: 29.490.000 VNĐ (giá gốc: 31.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19, RAM 8GB/12GB. Màn hình 120Hz. Camera kép 48MP."
+  },
+  {
+    "id": 50,
+    "price": 48990000,
+    "stock": 1000,
+    "variantName": "Xanh Đậm",
+    "productName": "iPhone 17 Pro Max 1TB",
+    "description": "Xanh Đậm Sản phẩm điện thoại iPhone 17 Pro Max bộ nhớ 1TB, màu Xanh Đậm. Giá bán hiện tại: 48.990.000 VNĐ (giá gốc: 50.990.000 VNĐ). Tình trạng: Còn hàng (1000 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro. Màn hình 6.9 inch ProMotion. Pin dung lượng khủng."
+  },
+  {
+    "id": 51,
+    "price": 42490000,
+    "stock": 100,
+    "variantName": "Xanh Đậm",
+    "productName": "iPhone 17 Pro Max 512GB",
+    "description": "Xanh Đậm Sản phẩm điện thoại iPhone 17 Pro bộ nhớ 512GB, màu Xanh Đậm (Deep Blue/Teal). Giá bán hiện tại: 38.590.000 VNĐ (giá gốc: 41.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro, RAM 12GB. Wifi 7 tốc độ cao."
+  },
+  {
+    "id": 52,
+    "price": 35990000,
+    "stock": 100,
+    "variantName": "Cam vũ trụ",
+    "productName": "iPhone 17 Pro Max 256GB",
+    "description": "Cam vũ trụ Sản phẩm điện thoại iPhone 17 Pro bộ nhớ 512GB, màu Xanh Đậm (Deep Blue/Teal). Giá bán hiện tại: 38.590.000 VNĐ (giá gốc: 41.490.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro, RAM 12GB. Wifi 7 tốc độ cao."
+  },
+  {
+    "id": 53,
+    "price": 32790000,
+    "stock": 100,
+    "variantName": "Cam vũ trụ",
+    "productName": "iPhone 17 Pro 256GB",
+    "description": "Cam vũ trụ Sản phẩm điện thoại iPhone 17 Pro bộ nhớ 512GB, màu Cam vũ trụ. Giá bán hiện tại: 38.590.000 VNĐ (giá gốc: 40.590.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật (Dự kiến): Chip A19 Pro, RAM 12GB. Hệ thống camera 3 mắt 48MP chất lượng cao nhất."
+  },
+  {
+    "id": 54,
+    "price": 15990000,
+    "stock": 100,
+    "variantName": "8 CPU - 10 GPU - 8GB - 512GB",
+    "productName": "Mac mini M2 2023",
+    "description": "8 CPU - 10 GPU - 8GB - 512GB Mac mini M2 2023 là dòng máy tính để bàn nhỏ gọn nhưng sở hữu hiệu năng mạnh mẽ nhờ chip Apple M2 với 8 nhân CPU và 10 nhân GPU. Thiết bị đáp ứng mượt mà các tác vụ văn phòng, chỉnh sửa ảnh và video cơ bản, đồng thời hoạt động êm ái và tiết kiệm điện năng. Sản phẩm hỗ trợ đa dạng cổng kết nối bao gồm Thunderbolt 4, USB-A, HDMI và Gigabit Ethernet, phù hợp cho mọi không gian làm việc. Đây là lựa chọn lý tưởng cho người dùng cá nhân, nhân viên văn phòng và nhà sáng tạo nội dung cần một thiết bị để bàn linh hoạt và ổn định."
+  },
+  {
+    "id": 55,
+    "price": 13990000,
+    "stock": 10,
+    "variantName": "Mac mini M2 2023",
+    "productName": "Mac mini M2 2023",
+    "description": "Mac mini M2 2023 Mac mini M2 2023 là dòng máy tính để bàn nhỏ gọn nhưng sở hữu hiệu năng mạnh mẽ nhờ chip Apple M2 với 8 nhân CPU và 10 nhân GPU. Thiết bị đáp ứng mượt mà các tác vụ văn phòng, chỉnh sửa ảnh và video cơ bản, đồng thời hoạt động êm ái và tiết kiệm điện năng. Sản phẩm hỗ trợ đa dạng cổng kết nối bao gồm Thunderbolt 4, USB-A, HDMI và Gigabit Ethernet, phù hợp cho mọi không gian làm việc. Đây là lựa chọn lý tưởng cho người dùng cá nhân, nhân viên văn phòng và nhà sáng tạo nội dung cần một thiết bị để bàn linh hoạt và ổn định."
+  },
+  {
+    "id": 56,
+    "price": 34490000,
+    "stock": 20,
+    "variantName": "10CPU 10GPU 32GB 1TB",
+    "productName": "Mac mini M4 2024",
+    "description": "10CPU 10GPU 32GB 1TB Mac mini M4 2024 là phiên bản nâng cấp đột phá với chip xử lý M4 thế hệ mới, mang lại tốc độ xử lý AI và đồ họa vượt trội so với các thế hệ trước. Thiết bị vẫn giữ thiết kế nhỏ gọn đặc trưng nhưng được tối ưu hóa hệ thống tản nhiệt, cho phép duy trì hiệu suất cao trong thời gian dài. Với khả năng hỗ trợ xuất nhiều màn hình độ phân giải cao và các chuẩn kết nối tiên tiến nhất, sản phẩm đáp ứng tốt nhu cầu của lập trình viên và chuyên gia đồ họa. Máy tính này phù hợp cho người dùng chuyên nghiệp cần sức mạnh xử lý lớn trong một thân máy tiết kiệm diện tích."
+  },
+  {
+    "id": 57,
+    "price": 29590000,
+    "stock": 10,
+    "variantName": "10CPU 10GPU 32GB 512GB",
+    "productName": "Mac mini M4 2024",
+    "description": "10CPU 10GPU 32GB 512GB Mac mini M4 2024 là phiên bản nâng cấp đột phá với chip xử lý M4 thế hệ mới, mang lại tốc độ xử lý AI và đồ họa vượt trội so với các thế hệ trước. Thiết bị vẫn giữ thiết kế nhỏ gọn đặc trưng nhưng được tối ưu hóa hệ thống tản nhiệt, cho phép duy trì hiệu suất cao trong thời gian dài. Với khả năng hỗ trợ xuất nhiều màn hình độ phân giải cao và các chuẩn kết nối tiên tiến nhất, sản phẩm đáp ứng tốt nhu cầu của lập trình viên và chuyên gia đồ họa. Máy tính này phù hợp cho người dùng chuyên nghiệp cần sức mạnh xử lý lớn trong một thân máy tiết kiệm diện tích."
+  },
+  {
+    "id": 58,
+    "price": 17690000,
+    "stock": 100,
+    "variantName": "Trắng vàng",
+    "productName": "Apple MacBook Air M2 2024",
+    "description": "Trắng vàng MacBook Air M2 phiên bản 2024 tiếp tục kế thừa thiết kế siêu mỏng nhẹ với vỏ nhôm nguyên khối và màn hình Liquid Retina sắc nét. Máy được trang bị chip M2 tối ưu hóa hiệu năng và thời lượng pin, cho phép hoạt động liên tục cả ngày dài mà không cần sạc. Sản phẩm tích hợp cổng sạc MagSafe tiện lợi, bàn phím Magic Keyboard êm ái và hệ thống âm thanh 4 loa sống động. Đây là chiếc laptop di động hoàn hảo cho sinh viên và doanh nhân thường xuyên di chuyển cần sự cân bằng giữa thời trang và hiệu suất."
+  },
+  {
+    "id": 59,
+    "price": 17690000,
+    "stock": 100,
+    "variantName": "Đen",
+    "productName": "Apple MacBook Air M2 2024",
+    "description": "Đen MacBook Air M2 phiên bản 2024 tiếp tục kế thừa thiết kế siêu mỏng nhẹ với vỏ nhôm nguyên khối và màn hình Liquid Retina sắc nét. Máy được trang bị chip M2 tối ưu hóa hiệu năng và thời lượng pin, cho phép hoạt động liên tục cả ngày dài mà không cần sạc. Sản phẩm tích hợp cổng sạc MagSafe tiện lợi, bàn phím Magic Keyboard êm ái và hệ thống âm thanh 4 loa sống động. Đây là chiếc laptop di động hoàn hảo cho sinh viên và doanh nhân thường xuyên di chuyển cần sự cân bằng giữa thời trang và hiệu suất."
+  },
+  {
+    "id": 60,
+    "price": 21020000,
+    "stock": 100,
+    "variantName": "Vàng",
+    "productName": "Apple MacBook Air 13 256GB 2020",
+    "description": "Vàng MacBook Air 13 inch 2020 là mẫu laptop mỏng nhẹ sử dụng chip Apple M1 mang tính cách mạng, cung cấp hiệu năng vượt trội và khả năng vận hành không quạt yên tĩnh tuyệt đối. Với màn hình Retina rực rỡ và dải màu rộng P3, thiết bị mang lại trải nghiệm hình ảnh chân thực cho công việc và giải trí. Máy sở hữu thời lượng pin ấn tượng lên đến 18 giờ, cùng bàn phím cắt kéo Magic Keyboard bền bỉ và Touch ID bảo mật. Sản phẩm là lựa chọn hàng đầu trong phân khúc laptop phổ thông dành cho học sinh, sinh viên và nhân viên văn phòng."
+  },
+  {
+    "id": 61,
+    "price": 21020000,
+    "stock": 100,
+    "variantName": "Xám",
+    "productName": "Apple MacBook Air 13 256GB 2020",
+    "description": "Xám MacBook Air 13 inch 2020 là mẫu laptop mỏng nhẹ sử dụng chip Apple M1 mang tính cách mạng, cung cấp hiệu năng vượt trội và khả năng vận hành không quạt yên tĩnh tuyệt đối. Với màn hình Retina rực rỡ và dải màu rộng P3, thiết bị mang lại trải nghiệm hình ảnh chân thực cho công việc và giải trí. Máy sở hữu thời lượng pin ấn tượng lên đến 18 giờ, cùng bàn phím cắt kéo Magic Keyboard bền bỉ và Touch ID bảo mật. Sản phẩm là lựa chọn hàng đầu trong phân khúc laptop phổ thông dành cho học sinh, sinh viên và nhân viên văn phòng."
+  },
+  {
+    "id": 62,
+    "price": 23090000,
+    "stock": 100,
+    "variantName": "10CPU 8GPU 16GB 256GB",
+    "productName": "MacBook Air M4 13 inch 2025",
+    "description": "10CPU 8GPU 16GB 256GB MacBook Air M4 13 inch 2025 là dòng laptop siêu di động thế hệ mới nhất, tích hợp vi xử lý M4 mạnh mẽ với khả năng xử lý các tác vụ trí tuệ nhân tạo (AI) ngay trên thiết bị. Máy sở hữu màn hình chất lượng cao với độ sáng và độ tương phản được cải thiện, cùng thiết kế siêu mỏng nhẹ đặc trưng của dòng Air. Hệ thống kết nối được nâng cấp với Wifi 7, đảm bảo tốc độ truyền tải dữ liệu nhanh chóng và ổn định. Đây là thiết bị lý tưởng cho người dùng yêu thích công nghệ mới, cần một chiếc laptop hiện đại, thông minh và linh hoạt."
+  },
+  {
+    "id": 63,
+    "price": 28490000,
+    "stock": 100,
+    "variantName": "10CPU 10GPU 16GB 512GB",
+    "productName": "MacBook Air M4 13 inch 2025",
+    "description": "10CPU 10GPU 16GB 512GB MacBook Air M4 13 inch 2025 là dòng laptop siêu di động thế hệ mới nhất, tích hợp vi xử lý M4 mạnh mẽ với khả năng xử lý các tác vụ trí tuệ nhân tạo (AI) ngay trên thiết bị. Máy sở hữu màn hình chất lượng cao với độ sáng và độ tương phản được cải thiện, cùng thiết kế siêu mỏng nhẹ đặc trưng của dòng Air. Hệ thống kết nối được nâng cấp với Wifi 7, đảm bảo tốc độ truyền tải dữ liệu nhanh chóng và ổn định. Đây là thiết bị lý tưởng cho người dùng yêu thích công nghệ mới, cần một chiếc laptop hiện đại, thông minh và linh hoạt."
+  },
+  {
+    "id": 64,
+    "price": 30790000,
+    "stock": 100,
+    "variantName": "8CPU 8GPU 16GB 256GB",
+    "productName": "iMac M4 2024 24 inch",
+    "description": "8CPU 8GPU 16GB 256GB iMac M4 2024 là máy tính All-in-One sở hữu thiết kế siêu mỏng đầy màu sắc, tích hợp chip M4 mang lại sức mạnh xử lý đồ họa và tính toán vượt trội. Màn hình Retina 24 inch 4.5K hiển thị hình ảnh sắc nét đến từng chi tiết, kết hợp cùng hệ thống âm thanh 6 loa và micro chuẩn studio. Thiết bị tối giản hóa không gian làm việc chỉ với một dây nguồn duy nhất, đi kèm bộ phụ kiện chuột và bàn phím đồng màu tinh tế. Sản phẩm phù hợp cho không gian gia đình, quầy lễ tân hoặc văn phòng hiện đại cần sự sang trọng và hiệu năng cao."
+  },
+  {
+    "id": 65,
+    "price": 55700000,
+    "stock": 100,
+    "variantName": "10CPU 10GPU 24GB 1TB Touch ID",
+    "productName": "iMac M4 2024 24 inch",
+    "description": "10CPU 10GPU 24GB 1TB Touch ID iMac M4 2024 là máy tính All-in-One sở hữu thiết kế siêu mỏng đầy màu sắc, tích hợp chip M4 mang lại sức mạnh xử lý đồ họa và tính toán vượt trội. Màn hình Retina 24 inch 4.5K hiển thị hình ảnh sắc nét đến từng chi tiết, kết hợp cùng hệ thống âm thanh 6 loa và micro chuẩn studio. Thiết bị tối giản hóa không gian làm việc chỉ với một dây nguồn duy nhất, đi kèm bộ phụ kiện chuột và bàn phím đồng màu tinh tế. Sản phẩm phù hợp cho không gian gia đình, quầy lễ tân hoặc văn phòng hiện đại cần sự sang trọng và hiệu năng cao."
+  },
+  {
+    "id": 66,
+    "price": 42090000,
+    "stock": 100,
+    "variantName": "10CPU 10GPU 16GB 1TB",
+    "productName": "MacBook Pro 14 M4",
+    "description": "10CPU 10GPU 16GB 1TB MacBook Pro 14 inch trang bị chip M4 là dòng laptop chuyên nghiệp, cung cấp hiệu suất đỉnh cao cho các tác vụ nặng như dựng phim, thiết kế 3D và lập trình phức tạp. Máy sở hữu màn hình Liquid Retina XDR với công nghệ ProMotion 120Hz, mang lại trải nghiệm hình ảnh mượt mà và chuẩn xác nhất. Hệ thống tản nhiệt chủ động giúp máy duy trì hiệu năng ổn định, đi kèm đầy đủ các cổng kết nối chuyên dụng như HDMI, khe thẻ nhớ SD và Thunderbolt. Đây là công cụ làm việc đắc lực dành cho các chuyên gia sáng tạo và kỹ sư phần mềm."
+  },
+  {
+    "id": 67,
+    "price": 46290000,
+    "stock": 100,
+    "variantName": "10CPU 10GPU 24GB 1TB",
+    "productName": "MacBook Pro 14 M4",
+    "description": "10CPU 10GPU 24GB 1TB MacBook Pro 14 inch trang bị chip M4 là dòng laptop chuyên nghiệp, cung cấp hiệu suất đỉnh cao cho các tác vụ nặng như dựng phim, thiết kế 3D và lập trình phức tạp. Máy sở hữu màn hình Liquid Retina XDR với công nghệ ProMotion 120Hz, mang lại trải nghiệm hình ảnh mượt mà và chuẩn xác nhất. Hệ thống tản nhiệt chủ động giúp máy duy trì hiệu năng ổn định, đi kèm đầy đủ các cổng kết nối chuyên dụng như HDMI, khe thẻ nhớ SD và Thunderbolt. Đây là công cụ làm việc đắc lực dành cho các chuyên gia sáng tạo và kỹ sư phần mềm."
+  },
+  {
+    "id": 68,
+    "price": 15990000,
+    "stock": 10,
+    "variantName": "I5-13420H/16GB/512GB PCIE/VGA 4GB RTX3050/16.0",
+    "productName": "Laptop ASUS Gaming Vivobook 16X K3605VC-RP431W",
+    "description": "I5-13420H/16GB/512GB PCIE/VGA 4GB RTX3050/16.0 ASUS Gaming Vivobook 16X là sự kết hợp giữa laptop văn phòng và hiệu năng gaming, sở hữu thiết kế thanh lịch nhưng bên trong là cấu hình phần cứng mạnh mẽ. Máy được trang bị màn hình lớn 16 inch sắc nét, cùng card đồ họa rời giúp xử lý mượt mà các tác vụ đồ họa, dựng video và chơi game giải trí. Thiết bị có đầy đủ các cổng kết nối thông dụng và hệ thống tản nhiệt kép IceCool giúp máy luôn mát mẻ. Đây là lựa chọn phù hợp cho sinh viên các ngành kỹ thuật, thiết kế hoặc người dùng đa nhiệm vừa làm việc vừa giải trí."
+  },
+  {
+    "id": 69,
+    "price": 15990000,
+    "stock": 100,
+    "variantName": "I7-240H/16GB/512GB PCIE/VGA 6GB RTX3050/16.0",
+    "productName": "Laptop ASUS Gaming Vivobook 16X K3605VC-RP431W",
+    "description": "I7-240H/16GB/512GB PCIE/VGA 6GB RTX3050/16.0 ASUS Gaming Vivobook 16X là sự kết hợp giữa laptop văn phòng và hiệu năng gaming, sở hữu thiết kế thanh lịch nhưng bên trong là cấu hình phần cứng mạnh mẽ. Máy được trang bị màn hình lớn 16 inch sắc nét, cùng card đồ họa rời giúp xử lý mượt mà các tác vụ đồ họa, dựng video và chơi game giải trí. Thiết bị có đầy đủ các cổng kết nối thông dụng và hệ thống tản nhiệt kép IceCool giúp máy luôn mát mẻ. Đây là lựa chọn phù hợp cho sinh viên các ngành kỹ thuật, thiết kế hoặc người dùng đa nhiệm vừa làm việc vừa giải trí."
+  },
+  {
+    "id": 70,
+    "price": 31990000,
+    "stock": 100,
+    "variantName": "I7-13650HX/16GB/512GB/VGA 8GB RTX5050/15.6 FHD 144HZ",
+    "productName": "Laptop Lenovo LOQ 15IRX10 83JE00PEVN",
+    "description": "I7-13650HX/16GB/512GB/VGA 8GB RTX5050/15.6 FHD 144HZ Lenovo LOQ 15IRX10 là dòng laptop gaming phổ thông thừa hưởng nhiều công nghệ từ dòng Legion cao cấp, mang lại hiệu năng ổn định với hệ thống tản nhiệt tiên tiến. Máy được trang bị vi xử lý thế hệ mới và card đồ họa rời, đáp ứng tốt các tựa game eSports và các ứng dụng đồ họa kỹ thuật. Bàn phím có hành trình sâu và độ nảy tốt, giúp thao tác gõ phím và chơi game chính xác, thoải mái. Sản phẩm phù hợp cho game thủ nhập môn và sinh viên cần một chiếc máy tính đa năng, bền bỉ và hiệu năng tốt trong tầm giá."
+  },
+  {
+    "id": 71,
+    "price": 31990000,
+    "stock": 100,
+    "variantName": "i5-12450HX/16GB/512GB/VGA 6GB RTX3050/15.6 FHD 144HZ",
+    "productName": "Laptop Lenovo LOQ 15IRX10 83JE00PEVN",
+    "description": "i5-12450HX/16GB/512GB/VGA 6GB RTX3050/15.6 FHD 144HZ Lenovo LOQ 15IRX10 là dòng laptop gaming phổ thông thừa hưởng nhiều công nghệ từ dòng Legion cao cấp, mang lại hiệu năng ổn định với hệ thống tản nhiệt tiên tiến. Máy được trang bị vi xử lý thế hệ mới và card đồ họa rời, đáp ứng tốt các tựa game eSports và các ứng dụng đồ họa kỹ thuật. Bàn phím có hành trình sâu và độ nảy tốt, giúp thao tác gõ phím và chơi game chính xác, thoải mái. Sản phẩm phù hợp cho game thủ nhập môn và sinh viên cần một chiếc máy tính đa năng, bền bỉ và hiệu năng tốt trong tầm giá."
+  },
+  {
+    "id": 72,
+    "price": 14290000,
+    "stock": 200,
+    "variantName": "Xanh",
+    "productName": "iPhone 14 256GB",
+    "description": "Xanh iPhone 14 phiên bản 256GB là điện thoại thông minh cân bằng giữa hiệu năng và thời lượng pin, sử dụng chip A15 Bionic mạnh mẽ. Thiết bị sở hữu màn hình Super Retina XDR 6.1 inch hiển thị sắc nét, cùng hệ thống camera kép 12MP được nâng cấp khả năng chụp thiếu sáng. Với bộ nhớ 256GB, người dùng có thể thoải mái lưu trữ hình ảnh, video chất lượng cao và cài đặt nhiều ứng dụng. Sản phẩm hỗ trợ các tính năng an toàn như phát hiện va chạm và liên lạc vệ tinh, phù hợp cho người dùng phổ thông cần sự ổn định và bền bỉ."
+  },
+  {
+    "id": 73,
+    "price": 14290000,
+    "stock": 200,
+    "variantName": "Xanh",
+    "productName": "iPhone 14 256GB",
+    "description": "Xanh iPhone 14 phiên bản 256GB là điện thoại thông minh cân bằng giữa hiệu năng và thời lượng pin, sử dụng chip A15 Bionic mạnh mẽ. Thiết bị sở hữu màn hình Super Retina XDR 6.1 inch hiển thị sắc nét, cùng hệ thống camera kép 12MP được nâng cấp khả năng chụp thiếu sáng. Với bộ nhớ 256GB, người dùng có thể thoải mái lưu trữ hình ảnh, video chất lượng cao và cài đặt nhiều ứng dụng. Sản phẩm hỗ trợ các tính năng an toàn như phát hiện va chạm và liên lạc vệ tinh, phù hợp cho người dùng phổ thông cần sự ổn định và bền bỉ."
+  },
+  {
+    "id": 74,
+    "price": 1590000,
+    "stock": 10,
+    "variantName": "Hồng",
+    "productName": "Tai nghe không dây JBL Wave Buds 2",
+    "description": "Hồng JBL Wave Buds 2 là tai nghe True Wireless thiết kế dạng nhét tai nhỏ gọn, mang lại chất âm JBL Deep Bass Sound sống động và mạnh mẽ. Sản phẩm có thời lượng pin dài, hỗ trợ sạc nhanh và khả năng kháng nước bụi, thích hợp cho việc sử dụng hàng ngày và tập luyện thể thao nhẹ. Công nghệ Smart Ambient giúp người dùng vừa nghe nhạc vừa nhận biết môi trường xung quanh một cách an toàn. Đây là lựa chọn tai nghe không dây giá tốt cho giới trẻ yêu thích âm nhạc sôi động và sự tiện lợi."
+  },
+  {
+    "id": 75,
+    "price": 1590000,
+    "stock": 30,
+    "variantName": "Xanh Dương",
+    "productName": "Tai nghe không dây JBL Wave Buds 2",
+    "description": "Xanh Dương JBL Wave Buds 2 là tai nghe True Wireless thiết kế dạng nhét tai nhỏ gọn, mang lại chất âm JBL Deep Bass Sound sống động và mạnh mẽ. Sản phẩm có thời lượng pin dài, hỗ trợ sạc nhanh và khả năng kháng nước bụi, thích hợp cho việc sử dụng hàng ngày và tập luyện thể thao nhẹ. Công nghệ Smart Ambient giúp người dùng vừa nghe nhạc vừa nhận biết môi trường xung quanh một cách an toàn. Đây là lựa chọn tai nghe không dây giá tốt cho giới trẻ yêu thích âm nhạc sôi động và sự tiện lợi."
+  },
+  {
+    "id": 76,
+    "price": 4990000,
+    "stock": 23,
+    "variantName": "Trắng",
+    "productName": "Tai nghe Bluetooth Apple AirPods Pro 2 2023",
+    "description": "Trắng AirPods Pro 2 phiên bản 2023 (USB-C) là tai nghe chống ồn chủ động hàng đầu của Apple, trang bị chip H2 mang lại chất lượng âm thanh vượt trội và khả năng khử tiếng ồn thông minh gấp 2 lần. Thiết bị hỗ trợ tính năng Âm thanh thích ứng và Nhận biết cuộc hội thoại, tự động điều chỉnh âm lượng theo môi trường. Hộp sạc tích hợp cổng USB-C tiện lợi, loa tìm kiếm và khả năng chống bụi nước chuẩn IP54. Sản phẩm dành cho người dùng hệ sinh thái Apple cần trải nghiệm âm thanh cao cấp và sự tĩnh lặng tuyệt đối."
+  },
+  {
+    "id": 78,
+    "price": 1140000,
+    "stock": 32,
+    "variantName": "Xanh",
+    "productName": "Tai nghe Bluetooth True Wireless JBL Wave Beam",
+    "description": "Xanh JBL Wave Beam là tai nghe không dây dạng stick (có đuôi) giúp đeo chắc chắn, tích hợp công nghệ âm thanh JBL Deep Bass đặc trưng. Thiết bị hỗ trợ tính năng TalkThru và Ambient Aware, cho phép người dùng đàm thoại và nghe âm thanh môi trường mà không cần tháo tai nghe. Với thời lượng pin tổng lên đến 32 giờ (kèm hộp sạc) và khả năng kháng nước bụi, sản phẩm đáp ứng tốt nhu cầu giải trí và di chuyển liên tục. Tai nghe phù hợp với người dùng năng động, cần chất âm tốt và cảm giác đeo thoải mái."
+  },
+  {
+    "id": 79,
+    "price": 1140000,
+    "stock": 43,
+    "variantName": "Đen",
+    "productName": "Tai nghe Bluetooth True Wireless JBL Wave Beam",
+    "description": "Đen JBL Wave Beam là tai nghe không dây dạng stick (có đuôi) giúp đeo chắc chắn, tích hợp công nghệ âm thanh JBL Deep Bass đặc trưng. Thiết bị hỗ trợ tính năng TalkThru và Ambient Aware, cho phép người dùng đàm thoại và nghe âm thanh môi trường mà không cần tháo tai nghe. Với thời lượng pin tổng lên đến 32 giờ (kèm hộp sạc) và khả năng kháng nước bụi, sản phẩm đáp ứng tốt nhu cầu giải trí và di chuyển liên tục. Tai nghe phù hợp với người dùng năng động, cần chất âm tốt và cảm giác đeo thoải mái."
+  },
+  {
+    "id": 80,
+    "price": 1140000,
+    "stock": 43,
+    "variantName": "Vàng kem",
+    "productName": "Tai nghe Bluetooth True Wireless JBL Wave Beam",
+    "description": "Vàng kem JBL Wave Beam là tai nghe không dây dạng stick (có đuôi) giúp đeo chắc chắn, tích hợp công nghệ âm thanh JBL Deep Bass đặc trưng. Thiết bị hỗ trợ tính năng TalkThru và Ambient Aware, cho phép người dùng đàm thoại và nghe âm thanh môi trường mà không cần tháo tai nghe. Với thời lượng pin tổng lên đến 32 giờ (kèm hộp sạc) và khả năng kháng nước bụi, sản phẩm đáp ứng tốt nhu cầu giải trí và di chuyển liên tục. Tai nghe phù hợp với người dùng năng động, cần chất âm tốt và cảm giác đeo thoải mái."
+  },
+  {
+    "id": 81,
+    "price": 669000,
+    "stock": 0,
+    "variantName": "Xanh dương",
+    "productName": "Tai nghe Bluetooth True Wireless Anker Soundcore R60i NC",
+    "description": "Xanh dương Anker Soundcore R60i NC là tai nghe không dây nổi bật với tính năng chống ồn chủ động (ANC), giúp loại bỏ tạp âm môi trường để mang lại không gian nghe nhạc riêng tư. Sản phẩm sở hữu driver lớn cho âm thanh chi tiết, cùng 4 micro hỗ trợ thuật toán AI giúp đàm thoại rõ ràng ngay cả ở nơi ồn ào. Hộp sạc được thiết kế độc đáo kiêm giá đỡ điện thoại, cùng thời lượng pin ấn tượng cho cả ngày sử dụng. Đây là lựa chọn kinh tế cho người dùng cần tai nghe chống ồn và đa năng."
+  },
+  {
+    "id": 82,
+    "price": 669000,
+    "stock": 42,
+    "variantName": "Đen",
+    "productName": "Tai nghe Bluetooth True Wireless Anker Soundcore R60i NC",
+    "description": "Đen Anker Soundcore R60i NC là tai nghe không dây nổi bật với tính năng chống ồn chủ động (ANC), giúp loại bỏ tạp âm môi trường để mang lại không gian nghe nhạc riêng tư. Sản phẩm sở hữu driver lớn cho âm thanh chi tiết, cùng 4 micro hỗ trợ thuật toán AI giúp đàm thoại rõ ràng ngay cả ở nơi ồn ào. Hộp sạc được thiết kế độc đáo kiêm giá đỡ điện thoại, cùng thời lượng pin ấn tượng cho cả ngày sử dụng. Đây là lựa chọn kinh tế cho người dùng cần tai nghe chống ồn và đa năng."
+  },
+  {
+    "id": 83,
+    "price": 2815000,
+    "stock": 43,
+    "variantName": "Buds 3",
+    "productName": "Tai nghe Bluetooth True Wireless Samsung Galaxy",
+    "description": "Buds 3 Tai nghe Samsung Galaxy Buds là dòng tai nghe không dây True Wireless cao cấp, được thiết kế để hoạt động hoàn hảo trong hệ sinh thái Samsung Galaxy. Thiết bị mang lại chất lượng âm thanh cân bằng, chi tiết và khả năng kết nối liền mạch, ổn định với điện thoại và máy tính bảng. Tai nghe hỗ trợ các tính năng thông minh như chuyển đổi thiết bị tự động và điều khiển cảm ứng tiện lợi. Sản phẩm phù hợp cho người dùng Android, đặc biệt là Samsung Fan, tìm kiếm trải nghiệm âm thanh đồng bộ và tiện ích."
+  },
+  {
+    "id": 84,
+    "price": 3690000,
+    "stock": 32,
+    "variantName": "Buds 3 Pro",
+    "productName": "Tai nghe Bluetooth True Wireless Samsung Galaxy",
+    "description": "Buds 3 Pro Tai nghe Samsung Galaxy Buds là dòng tai nghe không dây True Wireless cao cấp, được thiết kế để hoạt động hoàn hảo trong hệ sinh thái Samsung Galaxy. Thiết bị mang lại chất lượng âm thanh cân bằng, chi tiết và khả năng kết nối liền mạch, ổn định với điện thoại và máy tính bảng. Tai nghe hỗ trợ các tính năng thông minh như chuyển đổi thiết bị tự động và điều khiển cảm ứng tiện lợi. Sản phẩm phù hợp cho người dùng Android, đặc biệt là Samsung Fan, tìm kiếm trải nghiệm âm thanh đồng bộ và tiện ích."
+  },
+  {
+    "id": 85,
+    "price": 2440000,
+    "stock": 32,
+    "variantName": "Tune Beam 2 Ghost",
+    "productName": "Tai nghe không dây JBL",
+    "description": "Tune Beam 2 Ghost Tai nghe không dây JBL là thiết bị âm thanh di động mang lại sự tự do và chất âm sống động đặc trưng của thương hiệu JBL. Sản phẩm được thiết kế công thái học để đeo thoải mái, kết nối Bluetooth ổn định và tương thích với nhiều thiết bị khác nhau. Với thời lượng pin tốt và micro tích hợp, tai nghe đáp ứng nhu cầu nghe nhạc, xem phim và đàm thoại hàng ngày. Đây là lựa chọn phù hợp cho người dùng phổ thông yêu thích thương hiệu âm thanh uy tín và độ bền cao."
+  },
+  {
+    "id": 86,
+    "price": 2345000,
+    "stock": 32,
+    "variantName": "Tune Beam 2",
+    "productName": "Tai nghe không dây JBL",
+    "description": "Tune Beam 2 Tai nghe không dây JBL là thiết bị âm thanh di động mang lại sự tự do và chất âm sống động đặc trưng của thương hiệu JBL. Sản phẩm được thiết kế công thái học để đeo thoải mái, kết nối Bluetooth ổn định và tương thích với nhiều thiết bị khác nhau. Với thời lượng pin tốt và micro tích hợp, tai nghe đáp ứng nhu cầu nghe nhạc, xem phim và đàm thoại hàng ngày. Đây là lựa chọn phù hợp cho người dùng phổ thông yêu thích thương hiệu âm thanh uy tín và độ bền cao."
+  },
+  {
+    "id": 87,
+    "price": 1750000,
+    "stock": 32,
+    "variantName": "Tune Beam",
+    "productName": "Tai nghe không dây JBL",
+    "description": "Tune Beam Tai nghe không dây JBL là thiết bị âm thanh di động mang lại sự tự do và chất âm sống động đặc trưng của thương hiệu JBL. Sản phẩm được thiết kế công thái học để đeo thoải mái, kết nối Bluetooth ổn định và tương thích với nhiều thiết bị khác nhau. Với thời lượng pin tốt và micro tích hợp, tai nghe đáp ứng nhu cầu nghe nhạc, xem phim và đàm thoại hàng ngày. Đây là lựa chọn phù hợp cho người dùng phổ thông yêu thích thương hiệu âm thanh uy tín và độ bền cao."
+  },
+  {
+    "id": 88,
+    "price": 330000,
+    "stock": 25,
+    "variantName": "R50i A3949",
+    "productName": "Tai nghe Bluetooth True Wireless Anker Soundcore",
+    "description": "R50i A3949 Tai nghe Anker Soundcore True Wireless là dòng sản phẩm tập trung vào hiệu suất pin và chất lượng âm thanh vượt trội trong tầm giá. Thiết bị thường được trang bị công nghệ BassUp giúp tăng cường âm trầm, cùng khả năng kháng nước chuẩn IPX phù hợp cho thể thao. Kết nối Bluetooth nhanh chóng và độ trễ thấp giúp trải nghiệm xem video và chơi game mượt mà. Sản phẩm hướng đến người dùng thực dụng, cần một chiếc tai nghe bền bỉ, pin trâu và âm thanh sôi động."
+  },
+  {
+    "id": 89,
+    "price": 460000,
+    "stock": 73,
+    "variantName": "R50I NC",
+    "productName": "Tai nghe Bluetooth True Wireless Anker Soundcore",
+    "description": "R50I NC Tai nghe Anker Soundcore True Wireless là dòng sản phẩm tập trung vào hiệu suất pin và chất lượng âm thanh vượt trội trong tầm giá. Thiết bị thường được trang bị công nghệ BassUp giúp tăng cường âm trầm, cùng khả năng kháng nước chuẩn IPX phù hợp cho thể thao. Kết nối Bluetooth nhanh chóng và độ trễ thấp giúp trải nghiệm xem video và chơi game mượt mà. Sản phẩm hướng đến người dùng thực dụng, cần một chiếc tai nghe bền bỉ, pin trâu và âm thanh sôi động."
+  },
+  {
+    "id": 90,
+    "price": 520000,
+    "stock": 32,
+    "variantName": "Chính hãng",
+    "productName": "Sạc nhanh Apple 20w USB-C",
+    "description": "Chính hãng Củ sạc nhanh Apple 20W USB-C là phụ kiện chính hãng nhỏ gọn, hỗ trợ công nghệ sạc nhanh Power Delivery (PD) cho iPhone và iPad. Thiết bị giúp rút ngắn đáng kể thời gian sạc, có thể sạc đầy 50% pin cho iPhone chỉ trong khoảng 30 phút. Sản phẩm được chế tạo từ vật liệu cao cấp, đảm bảo các tiêu chuẩn an toàn khắt khe về chống quá nhiệt và quá dòng. Đây là phụ kiện thiết yếu cho mọi người dùng thiết bị Apple để tối ưu hóa hiệu suất sạc."
+  },
+  {
+    "id": 91,
+    "price": 445000,
+    "stock": 32,
+    "variantName": "Tím",
+    "productName": "Hub chuyển đổi Ugreen USB-C 5 IN 1 CM478 15495",
+    "description": "Tím Hub chuyển đổi Ugreen 5 trong 1 là giải pháp mở rộng kết nối đa năng cho laptop chỉ có cổng USB-C, với thiết kế vỏ nhôm tản nhiệt tốt và bền bỉ. Thiết bị tích hợp các cổng kết nối thiết yếu bao gồm HDMI hỗ trợ 4K, các cổng USB 3.0 tốc độ cao và cổng sạc PD pass-through. Sản phẩm cho phép người dùng kết nối dễ dàng với màn hình rời, chuột, bàn phím và ổ cứng ngoài cùng lúc. Đây là công cụ hỗ trợ đắc lực cho nhân viên văn phòng và người dùng MacBook cần mở rộng không gian làm việc."
+  },
+  {
+    "id": 92,
+    "price": 415000,
+    "stock": 32,
+    "variantName": "Xanh dương",
+    "productName": "Hub chuyển đổi Ugreen USB-C 5 IN 1 CM478 15495",
+    "description": "Xanh dương Hub chuyển đổi Ugreen 5 trong 1 là giải pháp mở rộng kết nối đa năng cho laptop chỉ có cổng USB-C, với thiết kế vỏ nhôm tản nhiệt tốt và bền bỉ. Thiết bị tích hợp các cổng kết nối thiết yếu bao gồm HDMI hỗ trợ 4K, các cổng USB 3.0 tốc độ cao và cổng sạc PD pass-through. Sản phẩm cho phép người dùng kết nối dễ dàng với màn hình rời, chuột, bàn phím và ổ cứng ngoài cùng lúc. Đây là công cụ hỗ trợ đắc lực cho nhân viên văn phòng và người dùng MacBook cần mở rộng không gian làm việc."
+  },
+  {
+    "id": 93,
+    "price": 850000,
+    "stock": 21,
+    "variantName": "Vàng",
+    "productName": "Đế sạc không dây Aukey Magfushion 1X LC-MC111 Qi2.2 25W",
+    "description": "Vàng Đế sạc không dây Aukey MagFusion 1X là trạm sạc từ tính hiện đại hỗ trợ chuẩn Qi2 mới nhất, mang lại tốc độ sạc không dây nhanh và ổn định. Thiết bị có thiết kế nhỏ gọn, sang trọng với khả năng hít nam châm chắc chắn, giữ điện thoại ở vị trí tối ưu trong quá trình sạc. Với công suất lên đến 25W (tùy thiết bị), sản phẩm giúp nạp năng lượng nhanh chóng cho iPhone và các dòng Android hỗ trợ sạc không dây từ tính. Sản phẩm phù hợp để đặt trên bàn làm việc hoặc tủ đầu giường, giúp không gian gọn gàng và tiện nghi."
+  },
+  {
+    "id": 94,
+    "price": 850000,
+    "stock": 52,
+    "variantName": "Trắng",
+    "productName": "Đế sạc không dây Aukey Magfushion 1X LC-MC111 Qi2.2 25W",
+    "description": "Trắng Đế sạc không dây Aukey MagFusion 1X là trạm sạc từ tính hiện đại hỗ trợ chuẩn Qi2 mới nhất, mang lại tốc độ sạc không dây nhanh và ổn định. Thiết bị có thiết kế nhỏ gọn, sang trọng với khả năng hít nam châm chắc chắn, giữ điện thoại ở vị trí tối ưu trong quá trình sạc. Với công suất lên đến 25W (tùy thiết bị), sản phẩm giúp nạp năng lượng nhanh chóng cho iPhone và các dòng Android hỗ trợ sạc không dây từ tính. Sản phẩm phù hợp để đặt trên bàn làm việc hoặc tủ đầu giường, giúp không gian gọn gàng và tiện nghi."
+  },
+  {
+    "id": 95,
+    "price": 650000,
+    "stock": 23,
+    "variantName": "75W",
+    "productName": "Sạc ô tô Aukey 2C1A CC-P3",
+    "description": "75W Tẩu sạc ô tô Aukey CC-P3 là bộ sạc xe hơi công suất cao, được trang bị 2 cổng USB-C và 1 cổng USB-A để sạc đồng thời nhiều thiết bị. Sản phẩm hỗ trợ các công nghệ sạc nhanh phổ biến như Power Delivery và Quick Charge, đảm bảo nạp pin nhanh chóng cho điện thoại và máy tính bảng trên mọi hành trình. Thiết kế nhỏ gọn, vừa vặn với hầu hết các ổ châm thuốc trên xe và có các tính năng bảo vệ an toàn điện. Đây là phụ kiện không thể thiếu cho các tài xế và người thường xuyên di chuyển bằng ô tô."
+  },
+  {
+    "id": 97,
+    "price": 390000,
+    "stock": 23,
+    "variantName": "66W",
+    "productName": "Sạc ô tô Aukey 2C1A CC-P3",
+    "description": "66W Tẩu sạc ô tô Aukey CC-P3 là bộ sạc xe hơi công suất cao, được trang bị 2 cổng USB-C và 1 cổng USB-A để sạc đồng thời nhiều thiết bị. Sản phẩm hỗ trợ các công nghệ sạc nhanh phổ biến như Power Delivery và Quick Charge, đảm bảo nạp pin nhanh chóng cho điện thoại và máy tính bảng trên mọi hành trình. Thiết kế nhỏ gọn, vừa vặn với hầu hết các ổ châm thuốc trên xe và có các tính năng bảo vệ an toàn điện. Đây là phụ kiện không thể thiếu cho các tài xế và người thường xuyên di chuyển bằng ô tô."
+  },
+  {
+    "id": 99,
+    "price": 290000,
+    "stock": 23,
+    "variantName": "Xanh dương",
+    "productName": "Pin dự phòng Xiaomi 10000mAh 22.5W tích hợp cáp Type-C",
+    "description": "Xanh dương Pin dự phòng Xiaomi 10000mAh là giải pháp năng lượng di động tiện lợi, nổi bật với cáp sạc Type-C được tích hợp sẵn trên thân pin. Thiết bị hỗ trợ sạc nhanh hai chiều với công suất 22.5W, cho phép sạc nhanh cho điện thoại và tự nạp đầy lại pin dự phòng trong thời gian ngắn. Kích thước nhỏ gọn cầm tay và dung lượng đủ dùng cho 1-2 lần sạc đầy điện thoại thông minh. Sản phẩm lý tưởng cho người dùng cần sự gọn nhẹ, không muốn mang theo dây cáp rời rườm rà."
+  },
+  {
+    "id": 100,
+    "price": 1750000,
+    "stock": 23,
+    "variantName": "Bạc",
+    "productName": "Pin dự phòng Anker 25.000mAh 165W tích hợp cáp rút gọn A1695",
+    "description": "Bạc Pin dự phòng Anker A1695 là trạm năng lượng di động cao cấp với dung lượng khủng 25.000mAh và tổng công suất đầu ra lên đến 165W. Sản phẩm có khả năng sạc nhanh cho cả laptop, máy tính bảng và điện thoại cùng lúc, đi kèm màn hình hiển thị thông số chi tiết. Thiết kế tích hợp cáp rút gọn thông minh và công nghệ sạc GaN giúp tối ưu kích thước dù hiệu năng cực lớn. Đây là thiết bị \"cứu cánh\" hoàn hảo cho những chuyến công tác dài ngày hoặc người dùng sử dụng nhiều thiết bị công nghệ cao."
+  },
+  {
+    "id": 101,
+    "price": 1750000,
+    "stock": 23,
+    "variantName": "Đen",
+    "productName": "Pin dự phòng Anker 25.000mAh 165W tích hợp cáp rút gọn A1695",
+    "description": "Đen Pin dự phòng Anker A1695 là trạm năng lượng di động cao cấp với dung lượng khủng 25.000mAh và tổng công suất đầu ra lên đến 165W. Sản phẩm có khả năng sạc nhanh cho cả laptop, máy tính bảng và điện thoại cùng lúc, đi kèm màn hình hiển thị thông số chi tiết. Thiết kế tích hợp cáp rút gọn thông minh và công nghệ sạc GaN giúp tối ưu kích thước dù hiệu năng cực lớn. Đây là thiết bị \"cứu cánh\" hoàn hảo cho những chuyến công tác dài ngày hoặc người dùng sử dụng nhiều thiết bị công nghệ cao."
+  },
+  {
+    "id": 102,
+    "price": 2290000,
+    "stock": 23,
+    "variantName": "Fit 4 Pro Dây Nylon",
+    "productName": "Đồng hồ thông minh Huawei Watch",
+    "description": "Fit 4 Pro Dây Nylon Đồng hồ thông minh Huawei Watch là thiết bị đeo tay kết hợp giữa thiết kế thời trang cổ điển và các tính năng công nghệ hiện đại. Sản phẩm cung cấp khả năng theo dõi sức khỏe toàn diện bao gồm nhịp tim, giấc ngủ và mức độ căng thẳng, cùng nhiều chế độ tập luyện thể thao. Với thời lượng pin ấn tượng và khả năng kết nối thông báo từ điện thoại, thiết bị hỗ trợ đắc lực cho cuộc sống hàng ngày. Sản phẩm phù hợp với người dùng tìm kiếm một chiếc smartwatch đẹp, bền bỉ và giàu tính năng."
+  },
+  {
+    "id": 103,
+    "price": 2290000,
+    "stock": 23,
+    "variantName": "Fit 4 Pro",
+    "productName": "Đồng hồ thông minh Huawei Watch",
+    "description": "Fit 4 Pro Đồng hồ thông minh Huawei Watch là thiết bị đeo tay kết hợp giữa thiết kế thời trang cổ điển và các tính năng công nghệ hiện đại. Sản phẩm cung cấp khả năng theo dõi sức khỏe toàn diện bao gồm nhịp tim, giấc ngủ và mức độ căng thẳng, cùng nhiều chế độ tập luyện thể thao. Với thời lượng pin ấn tượng và khả năng kết nối thông báo từ điện thoại, thiết bị hỗ trợ đắc lực cho cuộc sống hàng ngày. Sản phẩm phù hợp với người dùng tìm kiếm một chiếc smartwatch đẹp, bền bỉ và giàu tính năng."
+  },
+  {
+    "id": 104,
+    "price": 1740000,
+    "stock": 24,
+    "variantName": "Fit 4",
+    "productName": "Đồng hồ thông minh Huawei Watch",
+    "description": "Fit 4 Đồng hồ thông minh Huawei Watch là thiết bị đeo tay kết hợp giữa thiết kế thời trang cổ điển và các tính năng công nghệ hiện đại. Sản phẩm cung cấp khả năng theo dõi sức khỏe toàn diện bao gồm nhịp tim, giấc ngủ và mức độ căng thẳng, cùng nhiều chế độ tập luyện thể thao. Với thời lượng pin ấn tượng và khả năng kết nối thông báo từ điện thoại, thiết bị hỗ trợ đắc lực cho cuộc sống hàng ngày. Sản phẩm phù hợp với người dùng tìm kiếm một chiếc smartwatch đẹp, bền bỉ và giàu tính năng."
+  },
+  {
+    "id": 105,
+    "price": 690000,
+    "stock": 23,
+    "variantName": "Polyme",
+    "productName": "Vòng đeo tay thông minh Huawei Band 10",
+    "description": "Polyme Huawei Band 10 là vòng đeo tay sức khỏe thế hệ mới với thiết kế siêu mỏng nhẹ, mang lại cảm giác đeo \"vô hình\" thoải mái suốt cả ngày. Thiết bị sở hữu màn hình AMOLED sắc nét, hiển thị rõ ràng các chỉ số sức khỏe và thông báo tin nhắn. Sản phẩm được nâng cấp các thuật toán theo dõi vận động và giấc ngủ chuyên sâu, giúp người dùng quản lý sức khỏe khoa học hơn. Đây là lựa chọn lý tưởng cho người mới bắt đầu quan tâm đến thiết bị đeo thông minh với mức giá dễ tiếp cận."
+  },
+  {
+    "id": 106,
+    "price": 790000,
+    "stock": 23,
+    "variantName": "Hợp Kim Nhôm",
+    "productName": "Vòng đeo tay thông minh Huawei Band 10",
+    "description": "Hợp Kim Nhôm Huawei Band 10 là vòng đeo tay sức khỏe thế hệ mới với thiết kế siêu mỏng nhẹ, mang lại cảm giác đeo \"vô hình\" thoải mái suốt cả ngày. Thiết bị sở hữu màn hình AMOLED sắc nét, hiển thị rõ ràng các chỉ số sức khỏe và thông báo tin nhắn. Sản phẩm được nâng cấp các thuật toán theo dõi vận động và giấc ngủ chuyên sâu, giúp người dùng quản lý sức khỏe khoa học hơn. Đây là lựa chọn lý tưởng cho người mới bắt đầu quan tâm đến thiết bị đeo thông minh với mức giá dễ tiếp cận."
+  },
+  {
+    "id": 107,
+    "price": 8390000,
+    "stock": 12,
+    "variantName": "42mm (GPS) Viền Nhôm Dây Cao Su Size S/M",
+    "productName": "Apple Watch Series 11",
+    "description": "42mm (GPS) Viền Nhôm Dây Cao Su Size S/M Apple Watch Series 11 là thế hệ đồng hồ thông minh tương lai của Apple, hứa hẹn mang đến những đột phá về theo dõi sức khỏe và hiệu năng xử lý. Thiết bị dự kiến được trang bị vi xử lý S11 mạnh mẽ, màn hình tràn viền độ sáng cao và các cảm biến sinh trắc học mới nhất. Sản phẩm tích hợp sâu vào hệ sinh thái Apple, hỗ trợ các tính năng an toàn và tiện ích thông minh ngay trên cổ tay. Đây là thiết bị đẳng cấp dành cho người dùng iPhone muốn trải nghiệm công nghệ đeo tiên tiến nhất."
+  },
+  {
+    "id": 108,
+    "price": 12290000,
+    "stock": 24,
+    "variantName": "46mm (5G) Viền Nhôm Dây Cao Su Size S/M",
+    "productName": "Apple Watch Series 11",
+    "description": "46mm (5G) Viền Nhôm Dây Cao Su Size S/M Apple Watch Series 11 là thế hệ đồng hồ thông minh tương lai của Apple, hứa hẹn mang đến những đột phá về theo dõi sức khỏe và hiệu năng xử lý. Thiết bị dự kiến được trang bị vi xử lý S11 mạnh mẽ, màn hình tràn viền độ sáng cao và các cảm biến sinh trắc học mới nhất. Sản phẩm tích hợp sâu vào hệ sinh thái Apple, hỗ trợ các tính năng an toàn và tiện ích thông minh ngay trên cổ tay. Đây là thiết bị đẳng cấp dành cho người dùng iPhone muốn trải nghiệm công nghệ đeo tiên tiến nhất."
+  },
+  {
+    "id": 109,
+    "price": 21590000,
+    "stock": 34,
+    "variantName": "46mm (5G) Viền Titan Dây Thép Size S/M",
+    "productName": "Apple Watch Series 11",
+    "description": "46mm (5G) Viền Titan Dây Thép Size S/M Apple Watch Series 11 là thế hệ đồng hồ thông minh tương lai của Apple, hứa hẹn mang đến những đột phá về theo dõi sức khỏe và hiệu năng xử lý. Thiết bị dự kiến được trang bị vi xử lý S11 mạnh mẽ, màn hình tràn viền độ sáng cao và các cảm biến sinh trắc học mới nhất. Sản phẩm tích hợp sâu vào hệ sinh thái Apple, hỗ trợ các tính năng an toàn và tiện ích thông minh ngay trên cổ tay. Đây là thiết bị đẳng cấp dành cho người dùng iPhone muốn trải nghiệm công nghệ đeo tiên tiến nhất."
+  },
+  {
+    "id": 110,
+    "price": 990000,
+    "stock": 23,
+    "variantName": "Dây silicon",
+    "productName": "Đồng hồ thông minh Huawei Watch Fit 3",
+    "description": "Dây silicon Huawei Watch Fit 3 nổi bật với thiết kế mặt vuông thời thượng, màn hình lớn rực rỡ và thân máy siêu mỏng nhẹ. Đồng hồ tích hợp GPS độc lập giúp ghi lại lộ trình chạy bộ chính xác mà không cần mang theo điện thoại, cùng hàng trăm chế độ tập luyện đa dạng. Tính năng quản lý calo và nhắc nhở vận động thông minh biến thiết bị thành huấn luyện viên cá nhân ngay trên cổ tay. Sản phẩm hướng đến giới trẻ năng động, yêu thích thời trang và lối sống lành mạnh."
+  },
+  {
+    "id": 111,
+    "price": 2390000,
+    "stock": 23,
+    "variantName": "Dây da",
+    "productName": "Đồng hồ thông minh Huawei Watch Fit 3",
+    "description": "Dây da Huawei Watch Fit 3 nổi bật với thiết kế mặt vuông thời thượng, màn hình lớn rực rỡ và thân máy siêu mỏng nhẹ. Đồng hồ tích hợp GPS độc lập giúp ghi lại lộ trình chạy bộ chính xác mà không cần mang theo điện thoại, cùng hàng trăm chế độ tập luyện đa dạng. Tính năng quản lý calo và nhắc nhở vận động thông minh biến thiết bị thành huấn luyện viên cá nhân ngay trên cổ tay. Sản phẩm hướng đến giới trẻ năng động, yêu thích thời trang và lối sống lành mạnh."
+  },
+  {
+    "id": 113,
+    "price": 10490000,
+    "stock": 23,
+    "variantName": "Pro Dây Titanium",
+    "productName": "Đồng hồ thông minh Huawei Watch GT 6",
+    "description": "Pro Dây Titanium Huawei Watch GT 6 là dòng smartwatch cao cấp thiên về hiệu suất và sự bền bỉ, với thời lượng pin cực dài đặc trưng của dòng GT. Thiết kế của máy lấy cảm hứng từ đồng hồ cơ khí sang trọng, sử dụng vật liệu cao cấp chịu được các điều kiện môi trường khắc nghiệt. Thiết bị cung cấp các tính năng theo dõi sức khỏe chuyên sâu 24/7 và định vị chính xác cao cho các hoạt động ngoài trời. Đây là người bạn đồng hành tin cậy cho những người đam mê khám phá và doanh nhân bận rộn."
+  },
+  {
+    "id": 96,
+    "price": 590000,
+    "stock": 34,
+    "variantName": "100W",
+    "productName": "Sạc ô tô Aukey 2C1A CC-P3",
+    "description": "100W Tẩu sạc ô tô Aukey CC-P3 là bộ sạc xe hơi công suất cao, được trang bị 2 cổng USB-C và 1 cổng USB-A để sạc đồng thời nhiều thiết bị. Sản phẩm hỗ trợ các công nghệ sạc nhanh phổ biến như Power Delivery và Quick Charge, đảm bảo nạp pin nhanh chóng cho điện thoại và máy tính bảng trên mọi hành trình. Thiết kế nhỏ gọn, vừa vặn với hầu hết các ổ châm thuốc trên xe và có các tính năng bảo vệ an toàn điện. Đây là phụ kiện không thể thiếu cho các tài xế và người thường xuyên di chuyển bằng ô tô."
+  },
+  {
+    "id": 23,
+    "price": 18990000,
+    "stock": 100,
+    "variantName": "Xanh Lưu Ly",
+    "productName": "iPhone 16 128GB",
+    "description": "Xanh Lưu Ly Sản phẩm điện thoại iPhone 16 bản thường bộ nhớ 128GB, phiên bản màu Xanh Lưu Ly. Giá bán hiện tại: 18.990.001 VNĐ (giá gốc: 20.990.000 VNĐ). Tình trạng: Còn hàng (100 sản phẩm). Thông số kỹ thuật chi tiết: Chip A18 (tiến trình 3nm), RAM 8GB hỗ trợ Apple Intelligence. Màn hình 6.1 inch OLED Super Retina XDR. Cụm camera kép xếp dọc hỗ trợ quay Video không gian (Spatial Video). Camera chính 48MP zoom quang học 2x. Nút Tác vụ (Action) thay thế cần gạt rung, nút Camera Control cạnh bên."
+  },
+  {
+    "id": 77,
+    "price": 500000,
+    "stock": 30,
+    "variantName": "Trắng",
+    "productName": "Tai nghe Apple EarPods Lightning MWTY3ZA/A",
+    "description": "Trắng Apple EarPods với đầu cắm Lightning là tai nghe có dây chính hãng, được thiết kế tối ưu theo hình dáng tai người giúp đeo thoải mái trong thời gian dài. Sản phẩm cung cấp chất lượng âm thanh rõ ràng, âm bass sâu và tích hợp cụm điều khiển trên dây để tăng giảm âm lượng hoặc nhận cuộc gọi dễ dàng. Do sử dụng kết nối trực tiếp qua cổng Lightning, tai nghe đảm bảo tín hiệu ổn định và không có độ trễ, không cần sạc pin. Đây là phụ kiện cơ bản và bền bỉ dành cho người dùng iPhone và iPad."
+  },
+  {
+    "id": 98,
+    "price": 290000,
+    "stock": 22,
+    "variantName": "Be",
+    "productName": "Pin dự phòng Xiaomi 10000mAh 22.5W tích hợp cáp Type-C",
+    "description": "Be Pin dự phòng Xiaomi 10000mAh là giải pháp năng lượng di động tiện lợi, nổi bật với cáp sạc Type-C được tích hợp sẵn trên thân pin. Thiết bị hỗ trợ sạc nhanh hai chiều với công suất 22.5W, cho phép sạc nhanh cho điện thoại và tự nạp đầy lại pin dự phòng trong thời gian ngắn. Kích thước nhỏ gọn cầm tay và dung lượng đủ dùng cho 1-2 lần sạc đầy điện thoại thông minh. Sản phẩm lý tưởng cho người dùng cần sự gọn nhẹ, không muốn mang theo dây cáp rời rườm rà."
+  },
+  {
+    "id": 112,
+    "price": 3990000,
+    "stock": 22,
+    "variantName": "Dây Cao Su",
+    "productName": "Đồng hồ thông minh Huawei Watch GT 6",
+    "description": "Dây Cao Su Huawei Watch GT 6 là dòng smartwatch cao cấp thiên về hiệu suất và sự bền bỉ, với thời lượng pin cực dài đặc trưng của dòng GT. Thiết kế của máy lấy cảm hứng từ đồng hồ cơ khí sang trọng, sử dụng vật liệu cao cấp chịu được các điều kiện môi trường khắc nghiệt. Thiết bị cung cấp các tính năng theo dõi sức khỏe chuyên sâu 24/7 và định vị chính xác cao cho các hoạt động ngoài trời. Đây là người bạn đồng hành tin cậy cho những người đam mê khám phá và doanh nhân bận rộn."
+  }
+]

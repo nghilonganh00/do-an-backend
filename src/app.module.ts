@@ -16,12 +16,17 @@ import { ChatbotModule } from './modules/chatbot/chatbot.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ScheduleModule } from '@nestjs/schedule';
 import { TasksModule } from './modules/tasks/tasks.module';
+import { FeedbackModule } from './modules/feedback/feedback.module';
+import { RedisModule } from './modules/redis/redis.module';
+import { CacheModule } from './modules/cache/cache.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
     }),
+    RedisModule,
+    CacheModule,
     ScheduleModule.forRoot(),
     TasksModule,
     SupabaseModule,
@@ -36,6 +41,7 @@ import { TasksModule } from './modules/tasks/tasks.module';
     ProductModule,
     CouponModule,
     ChatbotModule,
+    FeedbackModule,
   ],
   controllers: [AppController],
   providers: [AppService],

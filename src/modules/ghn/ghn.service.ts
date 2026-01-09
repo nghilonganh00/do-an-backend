@@ -16,6 +16,9 @@ import {
   GhnProvinceResponse,
 } from './types/ghn-province.interface';
 import { CalculateFeeDto } from './dtos/calculate-fee.dto';
+import { SupabaseService } from '../supabase/supabase.service';
+import { Order } from '../order/types';
+import { ProductVariant } from '../product/types/product-variant.entity';
 
 @Injectable()
 export class GhnService {
@@ -26,6 +29,7 @@ export class GhnService {
   constructor(
     private readonly httpService: HttpService,
     private readonly configService: ConfigService,
+    private readonly supabaseService: SupabaseService,
   ) {
     this.apiUrl = this.configService.get<string>('GHN_API_URL') || '';
     this.token = this.configService.get<string>('GHN_API_TOKEN') || '';
@@ -231,7 +235,7 @@ export class GhnService {
     }
   }
 
-  async getStatusOrder(orderCode: string): Promise<GHNOrder> {
+  async getOrderInfo(orderCode: string): Promise<GHNOrder> {
     try {
       const response: { data: { data: GHNOrder } } = await lastValueFrom(
         this.httpService.get(`${this.apiUrl}/v2/shipping-order/detail`, {
@@ -247,6 +251,60 @@ export class GhnService {
       // Log lỗi chi tiết để debug
       const errorMessage =
         error instanceof Error ? error.message : 'Get Status Order Error';
+
+      throw new BadRequestException(errorMessage);
+    }
+  }
+
+  async cancelOrder(orderCode: string): Promise<GHNOrder> {
+    try {
+      console.log('orderCode 1: ', orderCode);
+      const response = await lastValueFrom(
+        this.httpService.get(`${this.apiUrl}/v2/switch-status/cancel`, {
+          headers: this.getHeaders(),
+          params: {
+            order_codes: orderCode,
+          },
+        }),
+      );
+
+      console.log('response: ', response);
+
+      const { data: order, error } = await this.supabaseService.client
+        .from('orders')
+        .select('*, orderItems:orderItems(*)')
+        .eq('code', orderCode)
+        .single<Order>();
+
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      for (const item of order.orderItems) {
+        const { data: variant, error: fetchError } =
+          await this.supabaseService.client
+            .from('productVariants')
+            .select('stock')
+            .eq('id', item.productVariantId)
+            .single<ProductVariant>();
+
+        if (fetchError) throw fetchError;
+
+        const { error: updateError } = await this.supabaseService.client
+          .from('productVariants')
+          .update({
+            stock: variant.stock + item.quantity,
+          })
+          .eq('id', item.productVariantId);
+
+        if (updateError) throw updateError;
+      }
+
+      return response.data.data;
+    } catch (error) {
+      console.error('GHN Cancel Order Error:', error);
+      const errorMessage =
+        error instanceof Error ? error.message : 'Cancel Order Error';
 
       throw new BadRequestException(errorMessage);
     }

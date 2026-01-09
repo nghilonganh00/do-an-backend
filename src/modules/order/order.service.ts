@@ -7,7 +7,7 @@ import { OrderItemsService } from '../order-items/order-items.service';
 import { OrderCouponService } from '../order-coupon/order-coupon.service';
 import { GhnService } from '../ghn/ghn.service';
 import { Order, OrderResponse } from './types';
-import { CreateGHNOrder } from '../ghn/types/ghn-province.interface';
+import { CreateGHNOrder, GHNOrder } from '../ghn/types/ghn-province.interface';
 import { OrderQueryParams } from './types/queryParams';
 import { CouponService } from '../coupon/coupon.service';
 
@@ -70,7 +70,7 @@ export class OrderService {
         name,
       } = createOrder;
 
-      const { discount } = await this.couponService.getDiscount({
+      const { couponId, discount } = await this.couponService.getDiscount({
         userId: userId,
         couponCode: couponCode,
         amount: total,
@@ -92,6 +92,7 @@ export class OrderService {
           p_fullname: name,
           p_phone: phone,
           p_address: address,
+          p_discount_id: couponId,
           p_province_id: provinceId,
           p_district_id: districtId,
           p_ward_code: wardCode,
@@ -188,6 +189,7 @@ export class OrderService {
         .from('orders')
         .select('*, payment:payments(*)')
         .eq('userId', userId)
+        .order('created_at', { ascending: false })
         .range(from, to);
 
       if (error) {
@@ -198,6 +200,32 @@ export class OrderService {
     } catch (error) {
       const errorMessage =
         error instanceof Error ? error.message : 'Get My Order Error';
+
+      throw new BadRequestException(errorMessage);
+    }
+  }
+
+  async getOrderInfo(orderCode: string): Promise<GHNOrder> {
+    try {
+      const order = await this.ghnService.getOrderInfo(orderCode);
+
+      return order;
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : 'Get Order Info Error';
+
+      throw new BadRequestException(errorMessage);
+    }
+  }
+
+  async cancelOrder(orderCode: string): Promise<void> {
+    try {
+      await this.ghnService.cancelOrder(orderCode);
+      console.log('orderCode: ', orderCode);
+      return;
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : 'Cancel Order Error';
 
       throw new BadRequestException(errorMessage);
     }

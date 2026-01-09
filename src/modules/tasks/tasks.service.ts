@@ -17,14 +17,15 @@ export class TasksService {
   async handleUpdateStatusOrder() {
     const { data } = await this.supabaseService.client
       .from('orders')
-      .select('*');
+      .select('*')
+      .neq('status', 'delivered');
 
     if (!data) return;
 
     const orders = data as Order[];
 
     for (const order of orders) {
-      const { status } = await this.ghnService.getStatusOrder(order.code);
+      const { status } = await this.ghnService.getOrderInfo(order.code);
       await this.orderService.updateStatus(order.id, status);
     }
   }

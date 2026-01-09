@@ -1,3 +1,5 @@
+import { OrderItem } from 'src/modules/order-items/types/order-item.entity';
+
 export interface Order {
   id: number;
   code: string;
@@ -5,6 +7,7 @@ export interface Order {
   quantity: number;
   price: number;
   status: 'pending' | 'paid' | 'cancelled';
+  orderItems: OrderItem[];
 }
 
 export interface OrderResponse {
